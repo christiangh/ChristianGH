@@ -1,0 +1,69 @@
+meta:
+    home:
+        title: ChristianGH - Web developer
+        description: Welcome to my personal website, where you can find everything about me
+        keywords: Web developer, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+    my_cv:
+        title: ChristianGH - My Curriculum Vitae
+        description: See and download my Curriculum Vitae
+        keywords: My Curriculum Vitae, My CV, Web developer, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+    contact:
+        title: ChristianGH - Contact
+        description: Contact and ask me anything sending an email
+        keywords: Contact, email, Christian García Herreras, ChristianGH
+    error:
+        404:
+            title: ChristianGH - Error 404
+            description: Error 404
+
+navigation:
+    home: CGH Home
+    my_cv: My CV
+    portfolio: Portfolio
+    contents: Contents
+    blog: Blog
+    contact: Contact
+
+footer:
+    main: Designed and developed by Christian García Herreras
+    web_map: Web map
+    secondary: You can also follow me in
+
+home:
+    paper1:
+        title: ¡Hello, welcome to my personal website!
+        text: My name is Christian García and I'm a web developer from Valencia certificated with a Technical Engineering in Computer Systems degree (Ingeniería Técnica en Informática de Sistemas) by the Polytechnic University of Valencia (UPV). Currently, I live in Dublin (Ireland), with the aim of living new experiences that allow me to grow personally and professionally. Also I take advantage for my level of Engish while I can enjoy all the advantages and the possibilities that offers this beautiful country.
+    paper2:
+        title: As a backend programmer...
+        text: I have worked individually as much as in a team developing several projects mainly in PHP. Sometimes I have programmed with raw PHP, using its power oriented to objects, while in other cases I have helped myself with frameworks such as Symfony 2 o Wordpress to create the website structure. Also, I have managed MySQL databases in which save, get or modify information of any type and size.
+    paper3:
+        title: As a frontend developer...
+        text: I use and experiment with the new labels and properties those incorporate HTML5 and CSS3, while I combine them with Javascript to improve user experince. I like test and reuse libraries such as JQuery and its plugins, or frameworks like AngularJS looking for increasing the interactivity between the user and the website. Recently, I have begun to manage programs such as Photoshop or Illustrator to create my own designs.
+    paper4:
+        title: Personally...
+        text: I consider myself an sport lover and I try to practice it always I can, especially football, basketball, tennis and jogging, but I also use the most relaxed moments to listen music and write. As any good IT, I spend my free time in front of my computer reading my favourites websites and blogs or or simply gaming with the videogame of the moment.
+
+webmap:
+    main: ChristianGH's web map
+    my_cv: My Currículum Vitae
+    blog:
+        title: Blog (Spanish)
+        category1: ChristianGH Website articles
+        category2: Web development articles
+        category3: Other articles
+
+mycv:
+    main: If you want, you can see and download my updated Curriculum Vitae in PDF clicking on the icon
+
+contact:
+    main: Send me an email to contact with me.
+    message_sent: Your email has been sent correctly, thank you for contact with me.
+    form:
+        message: My Message...
+        name: Name
+        email: Email
+        send: Send
+
+error:
+    404:
+        message: ERROR 404 EN

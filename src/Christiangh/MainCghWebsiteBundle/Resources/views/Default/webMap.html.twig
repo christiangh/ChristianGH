@@ -1,0 +1,26 @@
+{% extends 'ChristianghMainCghWebsiteBundle::layout.html.twig' %}
+
+{% block title %}ChristianGH - Desarrollador web - Mapa web{% endblock %}
+
+{% block main %}
+
+<main>
+    <section id="blackboard" class="dk_crayon_crumble">
+        <p>{{ 'webmap.main'|trans }}</p>
+        <ul class="web_sections">
+            <li><a href="{{ url('christiangh_main_cgh_website_homepage') }}">- {{ 'navigation.home'|trans }}</a></li>
+            <li><a href="{{ url('christiangh_main_cgh_website_my_cv') }}">- {{ 'webmap.my_cv'|trans }}</a></li>
+            <li>
+                <a href="{{ url('ekino_wordpress_catchall', {'url': ''}) }}">- {{ 'webmap.blog.title'|trans }}</a>
+                <ul class="web_subsections">
+                    <li><a href="{{ url('ekino_wordpress_catchall', {'url': 'secciones/christiangh-web/'}) }}">+ {{ 'webmap.blog.category1'|trans }}</a></li>
+                    <li><a href="{{ url('ekino_wordpress_catchall', {'url': 'secciones/desarrollo-web/'}) }}">+ {{ 'webmap.blog.category2'|trans }}</a></li>
+                    <li><a href="{{ url('ekino_wordpress_catchall', {'url': 'secciones/otros/'}) }}">+ {{ 'webmap.blog.category3'|trans }}</a></li>
+                </ul>
+            </li>
+            <li><a href="{{ url('christiangh_main_cgh_website_contact') }}">- {{ 'navigation.contact'|trans }}</a></li>
+        </ul>
+    </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+meta:
+    home:
+        title: ChristianGH - Desarrollador web
+        description: Bienvenido a mi página web personal, donde podrás encontrar todo sobre mi
+        keywords: Desarrollador web, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+    my_cv:
+        title: ChristianGH - Mi Currículum Vitae
+        description: Consulta y descarga mi Currículum Vitae
+        keywords: Mi Currículum Vitae, Mi CV, Desarrollador web, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+    contact:
+        title: ChristianGH - Contacto
+        description: Contacta conmigo enviándome un email y consúltame lo que quieras
+        keywords: Contacto, email, Christian García Herreras, ChristianGH
+    error:
+        404:
+            title: ChristianGH - Error 404
+            description: Error 404
+
+navigation:
+    home: CGH Home
+    my_cv: Mi CV
+    portfolio: Portfolio
+    contents: Contenidos
+    blog: Blog
+    contact: Contacto
+
+footer:
+    main: Diseño y desarrollo por Christian García Herreras
+    web_map: Mapa web
+    secondary: También puedes seguirme en
+
+home:
+    paper1:
+        title: ¡Hola, bienvenido a mi página web personal!
+        text: Mi nombre es Christian García y soy un desarrollador web de Valencia titulado en Ingeniería Técnica en Informática de Sistemas (ITIS) por la Universidad Politécnica de Valencia (UPV). Actualmente resido en Dublín (Irlanda), con el objetivo de vivir nuevas experiencias que me permitan crecer tanto personal como profesionalmente. También aprovecho para practicar y mejorar mi dominio del inglés mientras disfruto de todas las ventajas y posibilidades que ofrece este precioso país.
+    paper2:
+        title: Como programador backend...
+        text: he trabajado tanto solo como en equipo desarrollando diversos proyectos sobre todo en PHP. En algunos casos he programado con PHP crudo, exprimiendo toda su potencia orientada a objetos, mientras que en otros casos me he ayudado de frameworks como Symfony 2 o Wordpress para crear la estructura de la web. También he gestionado bases de datos MySQL con las que guardar, recuperar o modificar información de cualquier tipo y tamaño.
+    paper3:
+        title: Como desarrollador frontend...
+        text: utilizo y experimento con las nuevas etiquetas y propiedades que incorporan HTML5 y CSS3, mientras las combino con Javascript para mejorar la experiencia del usuario. Me gusta probar y usar librerías como JQuery y sus plugins o frameworks como AngularJS buscando aumentar la interactividad del usuario con la web. Recientemente he comenzado a manejar programas como Photoshop o Illustrator para crear mis propios diseños.
+    paper4:
+        title: A nivel personal...
+        text: me considero un amante del deporte y procuro practicarlo siempre que puedo, especialmente el fútbol, el baloncesto, el tenis y el running, pero también aprovecho los momentos más relajados para escuchar música y escribir. Como todo buen informático, también suelo pasar mi tiempo libre en el ordenador leyendo mis webs y blogs favoritos o simplemente jugando con el videojuego del momento.
+
+webmap:
+    main: Mapa web de ChristianGH
+    my_cv: Mi Currículum Vitae
+    blog:
+        title: Blog
+        category1: Artículos sobre la web ChristianGH
+        category2: Artículos sobre desarrollo web
+        category3: Otros artículos
+
+mycv:
+    main: Si quieres, puedes ver y descargar mi Currículum VITAE actualizado en PDF haciendo click en el siguiente icono
+
+contact:
+    main: Mándame un email si quieres contactar conmigo.
+    message_sent: Tu e-mail ha sido enviado, muchas gracias por contactar conmigo.
+    form:
+        message: Mi mensaje...
+        name: Nombre
+        email: Email
+        send: Enviar
+
+error:
+    404:
+        message: ERROR 404 ES

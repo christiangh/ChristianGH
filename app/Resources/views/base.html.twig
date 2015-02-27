@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    {% block metas %}
+        <title>ChristianGH - Desarrollador web</title>
+        <meta name="description" content="Description" />
+        <meta name="keywords" content="Keywords" />
+    {% endblock %}
+        <meta name="lang" content="{{ app.request.locale }}"/>
+        <meta name="author" content="Christian Garcia"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    {% stylesheets
+        'css/*'
+        filter='cssrewrite' output='css/compiled/all.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    
+		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+        <script src="{{ asset('js/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+        <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
+        {% endblock %}
+    </body>
+</html>

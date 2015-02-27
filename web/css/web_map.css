@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "DK Crayon Crumble";
+    src: url("/fonts/DK Crayon Crumble.ttf");
+}
+
+.dk_crayon_crumble{
+    font-family: DK Crayon Crumble;
+    font-weight: bold;
+}
+
+#blackboard{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background-color: #286E73;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 3px 4px 6px -3px #000000;
+    color: #FFFFFF;
+    font-size: 30px;
+    border: 20px solid black;
+    border-image: url(/images/border-blackboard.png) 20 20 20 20 repeat stretch;
+}
+
+#blackboard p{
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 5px 0;
+    margin: 0 0 15px;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 2px dashed white;
+}
+
+#blackboard .web_sections{
+    display: inline-block;
+    padding: 0;
+    width: 45%;
+    margin: 0 2.5% 0 0;
+}
+
+#blackboard .web_sections li{
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#blackboard .web_sections li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#blackboard .web_sections li a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+/** PHONE **/
+@media screen and (max-width:600px){
+    #blackboard{
+        border: 10px solid black;
+        border-image: url(/images/border-blackboard.png) 10 10 10 10 repeat stretch;
+    }
+    
+    #blackboard .web_sections{
+        width: 100%;
+    }
+}
+/** PHONE **/

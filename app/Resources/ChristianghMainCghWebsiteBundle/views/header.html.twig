@@ -1,0 +1,35 @@
+{% block header %}
+
+<header>
+    {% spaceless %}
+    <div id="anillas">
+        <img src="{{ asset('images/anillas.png') }}" class="anillas" />
+        {#
+		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
+		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
+		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
+		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
+        #}
+	</div>
+    {% endspaceless %}
+	
+	<div id="note_book_title">
+		<img id="main_title" src="{{ asset('images/christiangh.png') }}" />
+		<div id="languages_title">
+        {% if app.request.locale == 'es' %}
+			<img src="{{ asset('images/language-es.png') }}" class="language language_selected" />
+        {% else %}
+            <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'es'}) }}"><img src="{{ asset('images/language-es.png') }}" class="language" /></a>
+        {% endif %}
+        {% if app.request.locale == 'en' %}
+            <img src="{{ asset('images/language-en.png') }}" class="language language_selected" />
+        {% else %}
+            <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'en'}) }}"><img src="{{ asset('images/language-en.png') }}" class="language" /></a>
+        {% endif %}
+		</div>
+        <br />
+		<img id="secondary_title" src="{% if app.request.locale == 'es' %}{{ asset('images/desarrollador-web.png') }}{% else %}{{ asset('images/web-developer.png') }}{% endif %}" />
+	</div>
+</header>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+#my_cv_pdf{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#my_cv_pdf #my_cv_pdf_note{
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0 20px 20px 0;
+}
+
+#my_cv_pdf #link_to_my_cv{
+    display: inline-block;
+    width: auto;
+    height: 100px;
+}
+
+#my_cv_pdf #link_to_my_cv img{
+    width: auto;
+    height: auto;
+    box-shadow: 3px 4px 6px -3px #000000;
+}

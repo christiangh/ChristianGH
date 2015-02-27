@@ -1,0 +1,20 @@
+{% extends 'ChristianghMainCghWebsiteBundle::layout.html.twig' %}
+
+{% block metas %}
+    <title>{{ 'meta.my_cv.title'|trans }}</title>
+    <meta name="description" content="{{ 'meta.my_cv.description'|trans }}" />
+    <meta name="keywords" content="{{ 'meta.my_cv.keywords'|trans }}" />
+{% endblock %}
+ 
+{% block main %}
+
+<main>
+    <section id="my_cv_pdf">
+        <div id="my_cv_pdf_note" class="normal_message">
+            <p>{{ 'mycv.main'|trans }}</p>
+        </div>
+        <a id="link_to_my_cv" href="{{ asset('downloads/CV-Christian-Garcia-'~app.request.locale~'.pdf') }}" target="_blank"><img src="{{ asset('images/my_cv.png') }}" /></a>
+    </section>
+</main>
+
+{% endblock %}

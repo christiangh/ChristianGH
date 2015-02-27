@@ -1,0 +1,29 @@
+{% block nav %}
+
+<nav>
+    <div id="nav_list">
+    	<div id="current_section" class="{{ current_section_class }}"></div>
+        {% spaceless %}
+    	<ul id="section_list">
+    		<li class="home_color"><a href="{{ url('christiangh_main_cgh_website_homepage') }}"><span>{{ 'navigation.home'|trans }}</span></a></li>
+    		<li class="my_cv_color"><a href="{{ url('christiangh_main_cgh_website_my_cv') }}"><span>{{ 'navigation.my_cv'|trans }}</span></a></li>
+    		{# <li class="portfolio_color"><a href="{{ url('christiangh_main_cgh_website_homepage') }}"><span>{{ 'navigation.portfolio'|trans }}</span></a></li> #}
+    		{# <li class="contents_color"><a href="{{ url('christiangh_main_cgh_website_homepage') }}"><span>{{ 'navigation.contents'|trans }}</span></a></li> #}
+    		<li class="blog_color"><a href="{{ url('ekino_wordpress_catchall', {'url': ''}) }}"><span>{{ 'navigation.blog'|trans }}</span></a></li>
+    		<li class="contact_color"><a href="{{ url('christiangh_main_cgh_website_contact') }}"><span>{{ 'navigation.contact'|trans }}</span></a></li>
+    	</ul>
+        {% endspaceless %}
+    </div>
+    <div id="nav_select">
+        <select id="section_select" class="home_color">
+            <option value="{{ url('christiangh_main_cgh_website_homepage') }}" class="home_color" {% if current_section_class == 'home_color' %}selected="selected"{% endif %}>{{ 'navigation.home'|trans }}</option>
+            <option value="{{ url('christiangh_main_cgh_website_my_cv') }}" class="my_cv_color" {% if current_section_class == 'my_cv_color' %}selected="selected"{% endif %}>{{ 'navigation.my_cv'|trans }}</option>
+            {# <option value="{{ url('christiangh_main_cgh_website_homepage') }}" class="portfolio_color" {% if current_section_class == 'portfolio_color' %}selected="selected"{% endif %}>{{ 'navigation.portfolio'|trans }}</option> #}
+            {# <option value="{{ url('christiangh_main_cgh_website_homepage') }}" class="contents_color" {% if current_section_class == 'contents_color' %}selected="selected"{% endif %}>{{ 'navigation.contents'|trans }}</option> #}
+            <option value="{{ url('ekino_wordpress_catchall', {'url': ''}) }}" class="blog_color" {% if current_section_class == 'blog_color' %}selected="selected"{% endif %}>{{ 'navigation.blog'|trans }}</option>
+            <option value="{{ url('christiangh_main_cgh_website_contact') }}" class="contact_color" {% if current_section_class == 'contact_color' %}selected="selected"{% endif %}>{{ 'navigation.contact'|trans }}</option>
+        </select>
+    </div>
+</nav>
+
+{% endblock %}

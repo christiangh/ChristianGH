@@ -1,0 +1,49 @@
+{% extends 'ChristianghMainCghWebsiteBundle::layout.html.twig' %}
+
+{% block metas %}
+    <title>{{ 'meta.contact.title'|trans }}</title>
+    <meta name="description" content="{{ 'meta.contact.description'|trans }}" />
+    <meta name="keywords" content="{{ 'meta.contact.keywords'|trans }}" />
+{% endblock %}
+
+{% block main %}
+
+<main>
+
+    {% if app.session.flashbag.get('notice') == true %}
+        <div id="sent_successfully">
+            <p>{{ 'contact.message_sent'|trans }}</p>
+        </div>
+    {% else %}
+        <div id="my_contact" class="normal_message">
+            <p>{{ 'contact.main'|trans }}</p>
+        </div>
+    {% endif %}
+    
+    <div id="new_mail">
+        <div id="sobre">
+            <img id="sobre_sup" src="{{ asset('images/sobre_sup.png') }}" />
+            <img id="sobre_inf" src="{{ asset('images/sobre_inf.png') }}" />
+        </div>
+        <div id="mail_back">
+        {{ form_start(form) }}
+            {{ form_widget(form.message, { 'attr': {'class': 'mail_message'} }) }}
+            <div id="user_info">
+                <div class="email_field">
+                    {{ form_label(form.user_name, 'contact.form.name'|trans) }}
+                    {{ form_errors(form.user_name) }}
+                    {{ form_widget(form.user_name) }}
+                </div>
+                <div class="email_field">
+                    {{ form_label(form.user_email, 'contact.form.email') }}
+                    {{ form_errors(form.user_email) }}
+                    {{ form_widget(form.user_email) }}
+                </div>
+                {{ form_widget(form.send, { 'attr': {'class': 'send_email button_style'}, 'label': 'contact.form.send' }) }}
+            </div>
+        {{ form_end(form) }}
+        </div>
+    </div>
+</main>
+
+{% endblock %}

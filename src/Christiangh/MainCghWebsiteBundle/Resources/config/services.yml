@@ -1,0 +1,7 @@
+parameters:
+#    christiangh_main_cgh_website.example.class: Christiangh\MainCghWebsiteBundle\Example
+
+services:
+#    christiangh_main_cgh_website.example:
+#        class: %christiangh_main_cgh_website.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

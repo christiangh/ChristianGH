@@ -1,0 +1,24 @@
+Christiangh\MainCghWebsiteBundle\Entity\Email:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        userName:
+            type: string
+            length: 255
+            column: user_name
+        userEmail:
+            type: string
+            length: 255
+            column: user_email
+        message:
+            type: text
+        sentDate:
+            type: datetime
+            column: sent_date
+    lifecycleCallbacks: {  }

@@ -1,0 +1,28 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+	<div id="page">
+		{% block header %}
+			{{ include(
+	            'ChristianghMainCghWebsiteBundle::header.html.twig'
+	        ) }}
+		{% endblock %}
+		
+		{% block nav %}
+			{{ include(
+	            'ChristianghMainCghWebsiteBundle::nav.html.twig',
+	            {'section': 'home'}
+	        ) }}
+		{% endblock %}
+		
+		{% block main %}
+            <main>Main</main>
+        {% endblock %}
+		
+		{% block footer %}
+			{{ include(
+	            'ChristianghMainCghWebsiteBundle::footer.html.twig'
+	        ) }}
+		{% endblock %}
+	</div>
+{% endblock %}

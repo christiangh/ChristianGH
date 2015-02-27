@@ -1,0 +1,229 @@
+#sent_successfully{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    color: #FFFFFF;
+    background: url("/images/cartulina_verde_rota.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 3px 4px 6px -3px #000000;
+    box-sizing: border-box;
+    padding: 10px 20px 5px 50px;
+}
+
+#my_contact{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    z-index: 2;
+}
+
+#new_mail{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#mail_back{
+    position: relative;
+    float: left;
+    width: 70%;
+    height: auto;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 60px;
+    background: url("/images/folio_blanco.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    z-index: 2;
+    box-shadow: 3px 4px 6px -3px #000000;
+}
+
+.mail_message{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    z-index: 3;
+}
+
+#user_info{
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #3104B4;
+}
+
+#user_info .email_field{
+    position: relative;
+    float: left;
+    width: auto;
+    margin: 0 10px;
+}
+
+#user_info .email_field label{
+    position: relative;
+    float: left;
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+#user_info .email_field input{
+    position: relative;
+    float: left;
+    width: 200px;
+    min-width: 170px;
+    background-color: #CEDBFC;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 6px 3px;
+}
+
+#user_info .send_email{
+    position: relative;
+    float: right;
+    width: auto;
+}
+
+#sobre{
+    position: absolute;
+    width: 450px;
+    top: 0;
+    right: 0;    
+    z-index: 1;
+    /*box-shadow: 3px 4px 6px -3px #000000;*/    
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+#sobre_sup{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#sobre_inf{
+    position: relative;
+    float: left;
+    width: 100%;
+    box-shadow: 3px 4px 6px -3px #000000;
+}
+
+/** DESKTOP **/
+@media screen and (min-width:951px) and (max-width:1100px){
+    #user_info .email_field{
+        width: 50%;
+        margin: 0 0 10px 0;
+    }
+    
+    #user_info .send_email{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:851px) and (max-width: 950px){
+    #user_info .email_field{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+    #user_info .email_field #form_user_email{
+        margin-left: 19px;
+    }
+    
+    #user_info .send_email{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:850px){
+    #sobre{
+        top: 50px;
+        width: 350px;
+    }
+    
+    #user_info .email_field{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+    #user_info .email_field #form_user_email{
+        margin-left: 19px;
+    }
+    
+    #user_info .send_email{
+        margin-top: 10px;
+    }
+}
+/** DESKTOP **/
+
+/** TABLET **/
+@media screen and (min-width:601px) and (max-width:768px){
+    #sobre{
+        top: 50px;
+        width: 350px;
+    }
+    
+    #user_info .email_field{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+    #user_info .email_field #form_user_email{
+        margin-left: 19px;
+    }
+    
+    #user_info .send_email{
+        margin-top: 10px;
+    }
+}
+/** TABLET **/
+
+/** PHONE **/
+@media screen and (max-width:600px){
+    #sobre{
+        top: 20px;
+        right: 20px;
+        width: 250px;
+        -webkit-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        -o-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    
+    #mail_back{
+        margin: 130px 0 0;
+        width: 100%;
+    }
+    
+    #user_info .email_field{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+    #user_info .email_field label{
+        width: 100%;
+    }
+    
+    #user_info .email_field input{
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    #user_info .send_email{
+        margin-top: 10px;
+    }
+}
+/** PHONE **/

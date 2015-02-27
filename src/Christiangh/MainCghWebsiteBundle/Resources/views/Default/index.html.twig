@@ -1,0 +1,64 @@
+{% extends 'ChristianghMainCghWebsiteBundle::layout.html.twig' %}
+
+{% block metas %}
+    <title>{{ 'meta.home.title'|trans }}</title>
+    <meta name="description" content="{{ 'meta.home.description'|trans }}" />
+    <meta name="keywords" content="{{ 'meta.home.keywords'|trans }}" />
+{% endblock %}
+ 
+{% block main %}
+
+<main>
+{% spaceless %}
+    <section id="presentation">
+        <article class="paper">
+            <div id="main_picture" class="photo">
+                <img src="{{ asset('images/clip.png') }}" id="clip_picture" />
+                <img src="{{ asset('images/christian_garcia_herreras_main.jpg') }}" class="photo_image" />
+            </div>
+            <div id="text">
+                <div id="my_photo_area"></div>
+                <h2 class="my_greeting">{{ 'home.paper1.title'|trans }}</h2>
+                <p>{{ 'home.paper1.text'|trans }}</p>
+            </div>
+        </article>
+        <article class="paper">
+            <div id="text">
+                <h2 class="my_greeting">{{ 'home.paper2.title'|trans }}</h2>
+                <p>{{ 'home.paper2.text'|trans }}</p>
+                <img src="{{ asset('images/backend-graph.png') }}" id="backend_graph" />
+            </div>
+        </article>
+        <article class="paper">
+            <div id="text">
+                <h2 class="my_greeting">{{ 'home.paper3.title'|trans }}</h2>
+                <p>{{ 'home.paper3.text'|trans }}</p>
+                <img src="{{ asset('images/frontend-graph-'~app.request.locale~'.png') }}" id="frontend_graph" />
+            </div>
+        </article>
+        <article class="paper">
+            <div id="text">
+                <div class="foil_4_free_space_left"></div>
+                <div class="foil_4_free_space_right"></div>
+                <div class="foil_4_image_space_left"></div>
+                <div class="foil_4_image_space_right"></div>
+                <h2 class="my_greeting">{{ 'home.paper4.title'|trans }}</h2>
+                <p>{{ 'home.paper4.text'|trans }}</p>
+            </div>
+            <div id="football_picture" class="photo">
+                <img src="{{ asset('images/football-picture.jpg') }}" class="photo_image" />
+            </div>
+            <div id="travel_picture" class="photo">
+                <img src="{{ asset('images/travel-picture.jpg') }}" class="photo_image" />
+            </div>
+        </article>
+    </section>
+{% endspaceless %}
+</main>
+
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('js/jquery-ui-1.11.2.min.js') }}" type="text/javascript"></script>
+{% endblock %}

@@ -1,0 +1,316 @@
+/** HOMEPAGE **/
+#presentation{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#presentation .paper{
+    display: inline-block;
+    box-shadow: 2px 2px 5px -1px #000000;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#presentation .paper .photo{
+    position: absolute;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px -1px #000000;
+    margin-top: 8px;
+    z-index: 990;
+}
+
+#presentation .paper .photo#main_picture{
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+
+#presentation .paper .photo#football_picture{
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    bottom: 10px;
+}
+
+#presentation .paper .photo#travel_picture{
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    right: 0;
+    bottom: 20px;
+}
+
+#presentation .photo #clip_picture{
+    position: absolute;
+}
+
+#presentation .my_greeting{
+    font-size: 20px;
+}
+
+#presentation #text{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.foil_4_free_space_left, .foil_4_free_space_right, .foil_4_image_space_left, .foil_4_image_space_right{
+    height: 0;
+    width: 0;
+}
+/** HOMEPAGE **/
+
+/** DESKTOP **/
+@media screen and (min-width:1101px){
+    #presentation .my_greeting{
+        margin: 0 0 20px 0;
+    }
+    
+    #presentation .paper .photo{
+        width: 220px;
+        height: 250px;
+        z-index: 990;
+    }
+    
+    #presentation .photo .photo_image{
+        margin: 20px 15px 0;
+        width: 180px;
+    }
+    
+    #presentation .photo #clip_picture{
+        position: absolute;
+        top: -8px;
+        left: 192px;
+        width: 20px;
+    }
+    
+    #presentation .paper{
+        background: url("/images/cuadricula_vertical.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        width: 500px;
+        height: 600px;
+    }
+    
+    #presentation .paper #text{
+        padding: 20px 20px 20px 50px;
+    }
+    
+    #presentation #text #my_photo_area{
+        position: relative;
+        float: left;
+        height: 260px;
+        width: 200px;
+    }
+}
+    
+@media screen and (min-width:768px) and (max-width:1100px){
+    #presentation .my_greeting{
+        margin: 0 0 20px 0;
+    }
+    
+    #presentation .paper .photo{
+        width: 220px;
+        height: 250px;
+        z-index: 990;
+    }
+    
+    #presentation .photo .photo_image{
+        margin: 20px 15px 0;
+        width: 180px;
+    }
+    
+    #presentation .photo #clip_picture{
+        position: absolute;
+        top: -8px;
+        left: 192px;
+        width: 20px;
+    }
+    
+    #presentation .paper{
+        position: relative;
+        width: 700px;
+        height: 450px;
+        background: url("/images/cuadricula_horizontal.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    
+    #presentation .paper #text{
+        padding: 50px 20px 20px 20px;
+        
+    }
+    
+    #presentation #text #my_photo_area{
+        position: relative;
+        float: left;
+        height: 260px;
+        width: 220px;
+    }
+    
+    #presentation #backend_graph,
+    #presentation #frontend_graph{
+        position: relative;
+        float: left;
+        width: auto;
+        height: 150px;
+    }
+    
+    #presentation .paper .photo#football_picture{
+        left: 0;
+        bottom: 0;
+    }
+    
+    #presentation .paper .photo#travel_picture{
+        right: 0;
+        bottom: 0;
+    }
+    
+    .foil_4_free_space_left{
+        float: left;
+        clear: left;
+        height: 130px;
+        width: 0;
+    }
+    
+    .foil_4_free_space_right{
+        float: right;
+        clear: right;
+        height: 130px;
+        width: 0;
+    }
+    
+    .foil_4_image_space_left{
+        float: left;
+        clear: left;
+        height: 250px;
+        width: 225px;
+    }
+    
+    .foil_4_image_space_right{
+        float: right;
+        clear: right;
+        height: 250px;
+        width: 225px;
+    }
+}
+/** DESKTOP **/
+/** TABLET **/
+@media screen and (min-width:601px) and (max-width:768px){
+    #presentation .paper{
+        position: relative;
+        background: url("/images/cuadricula_vertical.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        width: 500px;
+        height: 600px;
+    }
+    
+    #presentation .paper #text{
+        padding: 20px 20px 20px 50px;
+    }
+    
+    #presentation .my_greeting{
+        margin: 0 0 25px 0;
+    }
+    
+    #presentation .paper .photo{
+        width: 200px;
+        height: 230px;
+        z-index: 990;
+    }
+    
+    #presentation .photo .photo_image{
+        margin: 20px 15px 0;
+        width: 150px;
+    }
+    
+    #presentation .paper .photo#football_picture{
+        left: 0;
+        bottom: 0;
+    }
+    
+    #presentation .paper .photo#travel_picture{
+        right: 0;
+        bottom: 0;
+    }
+    
+    #presentation .photo #clip_picture{
+        position: absolute;
+        top: -8px;
+        left: 175px;
+        width: 16px;
+    }
+    
+    #presentation #text #my_photo_area{
+        position: relative;
+        float: left;
+        height: 240px;
+        width: 160px;
+    }
+}
+/** TABLET **/
+/** PHONE **/
+@media screen and (max-width:600px){
+    #presentation .paper{
+        background: url("/images/cuadricula_vertical.png") repeat-y scroll left top rgba(0, 0, 0, 0);
+        width: auto;
+        height: auto;
+    }
+    
+    #presentation .paper #text{
+        padding: 10px 10px 10px 40px;
+    }
+    
+    #presentation .my_greeting{
+        margin: 0 0 20px 0;
+    }
+    
+    #presentation .paper .photo{
+        width: 170px;
+        height: 200px;
+        z-index: 990;
+    }
+    
+    #presentation .photo .photo_image{
+        margin: 20px 15px 0;
+        width: 130px;
+    }
+    
+    #presentation .paper .photo#football_picture{
+        float: left;
+    }
+    
+    #presentation .paper .photo#travel_picture{
+        position: relative;
+        float: right;
+    }
+    
+    #presentation .photo #clip_picture{
+        position: absolute;
+        top: -8px;
+        left: 150px;
+        width: 12px;
+    }
+    
+    #presentation #text #my_photo_area{
+        position: relative;
+        float: left;
+        height: 210px;
+        width: 100%;
+    }
+    
+    #presentation #backend_graph,
+    #presentation #frontend_graph{
+        position: relative;
+        float: left;
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+    }
+}
+/** PHONE **/
