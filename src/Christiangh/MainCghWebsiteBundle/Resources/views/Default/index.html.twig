@@ -4,6 +4,7 @@
     <title>{{ 'meta.home.title'|trans }}</title>
     <meta name="description" content="{{ 'meta.home.description'|trans }}" />
     <meta name="keywords" content="{{ 'meta.home.keywords'|trans }}" />
+    <meta name="google-site-verification" content="6Fi--Jm9wFjg1M4NaM-inczcouoZTXahO_dg48IGEqA" />
 {% endblock %}
  
 {% block main %}
@@ -16,34 +17,38 @@
                 <img src="{{ asset('images/clip.png') }}" id="clip_picture" />
                 <img src="{{ asset('images/christian_garcia_herreras_main.jpg') }}" class="photo_image" />
             </div>
-            <div id="text">
+            <div class="text_in_foil">
                 <div id="my_photo_area"></div>
                 <h2 class="my_greeting">{{ 'home.paper1.title'|trans }}</h2>
-                <p>{{ 'home.paper1.text'|trans }}</p>
+                <p>{{ 'home.paper1.text'|trans|raw }}</p>
             </div>
         </article>
         <article class="paper">
-            <div id="text">
+            <div class="text_in_foil">
+                <div class="foil_2_free_space_left"></div>
+                <div class="foil_2_image_space_left"></div>
                 <h2 class="my_greeting">{{ 'home.paper2.title'|trans }}</h2>
-                <p>{{ 'home.paper2.text'|trans }}</p>
+                <p>{{ 'home.paper2.text'|trans|raw }}</p>
                 <img src="{{ asset('images/backend-graph.png') }}" id="backend_graph" />
             </div>
         </article>
         <article class="paper">
-            <div id="text">
+            <div class="text_in_foil">
+                <div class="foil_3_free_space_left"></div>
+                <div class="foil_3_image_space_left"></div>
                 <h2 class="my_greeting">{{ 'home.paper3.title'|trans }}</h2>
-                <p>{{ 'home.paper3.text'|trans }}</p>
+                <p>{{ 'home.paper3.text'|trans|raw }}</p>
                 <img src="{{ asset('images/frontend-graph-'~app.request.locale~'.png') }}" id="frontend_graph" />
             </div>
         </article>
         <article class="paper">
-            <div id="text">
+            <div class="text_in_foil">
                 <div class="foil_4_free_space_left"></div>
                 <div class="foil_4_free_space_right"></div>
                 <div class="foil_4_image_space_left"></div>
                 <div class="foil_4_image_space_right"></div>
                 <h2 class="my_greeting">{{ 'home.paper4.title'|trans }}</h2>
-                <p>{{ 'home.paper4.text'|trans }}</p>
+                <p>{{ 'home.paper4.text'|trans|raw }}</p>
             </div>
             <div id="football_picture" class="photo">
                 <img src="{{ asset('images/football-picture.jpg') }}" class="photo_image" />

@@ -25,6 +25,7 @@
 /web/app_dev.php
 /web/css/compile/*
 /web/js/compile/*
+/web/ni/*
 /.project
 /composer.json
 /composer.lock

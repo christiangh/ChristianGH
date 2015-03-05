@@ -1,6 +1,10 @@
 {% extends 'ChristianghMainCghWebsiteBundle::layout.html.twig' %}
 
-{% block title %}ChristianGH - Desarrollador web - Mapa web{% endblock %}
+{% block metas %}
+    <title>{{ 'meta.webmap.title'|trans }}</title>
+    <meta name="description" content="{{ 'meta.webmap.description'|trans }}" />
+    <meta name="keywords" content="{{ 'meta.webmap.keywords'|trans }}" />
+{% endblock %}
 
 {% block main %}
 

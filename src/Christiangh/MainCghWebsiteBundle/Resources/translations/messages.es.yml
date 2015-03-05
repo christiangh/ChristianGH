@@ -1,16 +1,20 @@
 meta:
     home:
         title: ChristianGH - Desarrollador web
-        description: Bienvenido a mi página web personal, donde podrás encontrar todo sobre mi
-        keywords: Desarrollador web, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+        description: Bienvenido a la web de Christian García Herreras, donde podrás encontrar todo sobre mí
+        keywords: Christian García Herreras, Desarrollador web, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
     my_cv:
         title: ChristianGH - Mi Currículum Vitae
-        description: Consulta y descarga mi Currículum Vitae
-        keywords: Mi Currículum Vitae, Mi CV, Desarrollador web, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+        description: Consulta y descarga el Currículum Vitae de Christian Garcia Herreras
+        keywords: Christian García Herreras, Currículum Vitae, CV, Desarrollador web, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
     contact:
         title: ChristianGH - Contacto
-        description: Contacta conmigo enviándome un email y consúltame lo que quieras
-        keywords: Contacto, email, Christian García Herreras, ChristianGH
+        description: Contacta con Christian García Herreras enviándome un email y consúltame lo que quieras
+        keywords: Christian García Herreras, Contacto, Email
+    webmap:
+        title: ChristianGH - Mapa web
+        description: Mapa web completo de la página de Christian García Herreras
+        keywords: Christian García Herreras, Mapa web, Contenidos
     error:
         404:
             title: ChristianGH - Error 404
@@ -32,16 +36,16 @@ footer:
 home:
     paper1:
         title: ¡Hola, bienvenido a mi página web personal!
-        text: Mi nombre es Christian García y soy un desarrollador web de Valencia titulado en Ingeniería Técnica en Informática de Sistemas (ITIS) por la Universidad Politécnica de Valencia (UPV). Actualmente resido en Dublín (Irlanda), con el objetivo de vivir nuevas experiencias que me permitan crecer tanto personal como profesionalmente. También aprovecho para practicar y mejorar mi dominio del inglés mientras disfruto de todas las ventajas y posibilidades que ofrece este precioso país.
+        text: Mi nombre es <span class="underlined">Christian García Herreras</span> y soy un <span class="underlined">desarrollador web</span> de Valencia titulado en <span class="underlined">Ingeniería Técnica en Informática de Sistemas</span> (ITIS) por la Universidad Politécnica de Valencia (UPV). Actualmente resido en <span class="underlined">Dublín</span> (Irlanda), con el objetivo de vivir nuevas experiencias que me permitan crecer tanto personal como profesionalmente. También aprovecho para practicar y mejorar mi dominio del inglés mientras disfruto de todas las ventajas y posibilidades que ofrece este precioso país.
     paper2:
         title: Como programador backend...
-        text: he trabajado tanto solo como en equipo desarrollando diversos proyectos sobre todo en PHP. En algunos casos he programado con PHP crudo, exprimiendo toda su potencia orientada a objetos, mientras que en otros casos me he ayudado de frameworks como Symfony 2 o Wordpress para crear la estructura de la web. También he gestionado bases de datos MySQL con las que guardar, recuperar o modificar información de cualquier tipo y tamaño.
+        text: he trabajado tanto solo como en equipo desarrollando diversos proyectos sobre todo en <span class="underlined">PHP</span>. En algunos casos he programado unicamente con PHP, exprimiendo toda su potencia orientada a objetos, mientras que en otros casos me he ayudado de frameworks como <span class="underlined">Symfony 2</span> o <span class="underlined">Wordpress</span> para crear la estructura de la web. También he gestionado bases de datos <span class="underlined">MySQL</span> con las que guardar, recuperar o modificar información de cualquier tipo y tamaño.
     paper3:
         title: Como desarrollador frontend...
-        text: utilizo y experimento con las nuevas etiquetas y propiedades que incorporan HTML5 y CSS3, mientras las combino con Javascript para mejorar la experiencia del usuario. Me gusta probar y usar librerías como JQuery y sus plugins o frameworks como AngularJS buscando aumentar la interactividad del usuario con la web. Recientemente he comenzado a manejar programas como Photoshop o Illustrator para crear mis propios diseños.
+        text: utilizo y experimento con las nuevas etiquetas y propiedades que incorporan <span class="underlined">HTML5</span> y <span class="underlined">CSS3</span>, mientras las combino con <span class="underlined">Javascript</span> para mejorar la experiencia del usuario. Me gusta probar y usar librerías como <span class="underlined">JQuery</span> y sus plugins o frameworks como <span class="underlined">AngularJS</span> buscando aumentar la interactividad del usuario con la web. Recientemente he comenzado a manejar programas como <span class="underlined">Photoshop</span> o <span class="underlined">Illustrator</span> para crear mis propios diseños.
     paper4:
         title: A nivel personal...
-        text: me considero un amante del deporte y procuro practicarlo siempre que puedo, especialmente el fútbol, el baloncesto, el tenis y el running, pero también aprovecho los momentos más relajados para escuchar música y escribir. Como todo buen informático, también suelo pasar mi tiempo libre en el ordenador leyendo mis webs y blogs favoritos o simplemente jugando con el videojuego del momento.
+        text: me considero un amante del <span class="underlined">deporte</span> y procuro practicarlo siempre que puedo, especialmente el fútbol, el baloncesto, el tenis y el running, pero también aprovecho los momentos más relajados para escuchar <span class="underlined">música</span> y <span class="underlined">escribir</span>. Como todo buen informático, también suelo pasar mi tiempo libre en el ordenador leyendo mis <span class="underlined">webs</span> y <span class="underlined">blogs</span> favoritos.
 
 webmap:
     main: Mapa web de ChristianGH

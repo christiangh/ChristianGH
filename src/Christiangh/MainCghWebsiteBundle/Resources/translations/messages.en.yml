@@ -1,16 +1,20 @@
 meta:
     home:
         title: ChristianGH - Web developer
-        description: Welcome to my personal website, where you can find everything about me
-        keywords: Web developer, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+        description: Welcome to Christian García Herreras website, where you can find everything about me
+        keywords: Christian García Herreras, Web developer, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
     my_cv:
         title: ChristianGH - My Curriculum Vitae
-        description: See and download my Curriculum Vitae
-        keywords: My Curriculum Vitae, My CV, Web developer, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
+        description: See and download the Christian García Herreras Curriculum Vitae
+        keywords: Christian García Herreras, Curriculum Vitae, CV, Web developer, PHP, Symfony, Javascript, JQuery, AJAX, MySQL
     contact:
         title: ChristianGH - Contact
-        description: Contact and ask me anything sending an email
-        keywords: Contact, email, Christian García Herreras, ChristianGH
+        description: Contact with Christian García Herreras and ask me anything sending an email
+        keywords: Christian García Herreras, Contact, Email
+    webmap:
+        title: ChristianGH - Sitemap
+        description: Sitemap of Christian García Herreras website
+        keywords: Christian García Herreras, Sitemap, Contents
     error:
         404:
             title: ChristianGH - Error 404
@@ -26,25 +30,25 @@ navigation:
 
 footer:
     main: Designed and developed by Christian García Herreras
-    web_map: Web map
+    web_map: Sitemap
     secondary: You can also follow me in
 
 home:
     paper1:
-        title: ¡Hello, welcome to my personal website!
-        text: My name is Christian García and I'm a web developer from Valencia certificated with a Technical Engineering in Computer Systems degree (Ingeniería Técnica en Informática de Sistemas) by the Polytechnic University of Valencia (UPV). Currently, I live in Dublin (Ireland), with the aim of living new experiences that allow me to grow personally and professionally. Also I take advantage for my level of Engish while I can enjoy all the advantages and the possibilities that offers this beautiful country.
+        title: Hello, welcome to my personal website!
+        text: My name is <span class="underlined">Christian García Herreras</span> and I'm a <span class="underlined">web developer</span> from Valencia certified with a <span class="underlined">Technical Engineering in Computer Systems degree</span> (Ingeniería Técnica en Informática de Sistemas) by the Polytechnic University of Valencia (UPV). Currently, I live in <span class="underlined">Dublin</span> (Ireland), with the aim of living new experiences that allow me to grow personally and professionally. Also to improve my Engish skills while I can enjoy all the possibilities that this beautiful country has to offer.
     paper2:
         title: As a backend programmer...
-        text: I have worked individually as much as in a team developing several projects mainly in PHP. Sometimes I have programmed with raw PHP, using its power oriented to objects, while in other cases I have helped myself with frameworks such as Symfony 2 o Wordpress to create the website structure. Also, I have managed MySQL databases in which save, get or modify information of any type and size.
+        text: I have worked individually as well as in a team developing several projects mainly in <span class="underlined">PHP</span>. Sometimes I have programmed only with PHP, using its power oriented to objects, while in other cases I made use of frameworks such as <span class="underlined">Symfony 2</span> o <span class="underlined">Wordpress</span> to create the website structure. Also, I have managed <span class="underlined">MySQL</span> databases in which save, get or modify information of any type and size.
     paper3:
         title: As a frontend developer...
-        text: I use and experiment with the new labels and properties those incorporate HTML5 and CSS3, while I combine them with Javascript to improve user experince. I like test and reuse libraries such as JQuery and its plugins, or frameworks like AngularJS looking for increasing the interactivity between the user and the website. Recently, I have begun to manage programs such as Photoshop or Illustrator to create my own designs.
+        text: I use and experiment with the new labels and properties that incorporate <span class="underlined">HTML5</span> and <span class="underlined">CSS3</span>, while I combine them with <span class="underlined">Javascript</span> to improve the user's experince. I like to test and reuse libraries such as <span class="underlined">JQuery</span> and its plugins, or frameworks like <span class="underlined">AngularJS</span> in order to increase the interactivity between the user and the website. Recently, I have begun to manage programs such as <span class="underlined">Photoshop</span> or <span class="underlined">Illustrator</span> to create my own designs.
     paper4:
         title: Personally...
-        text: I consider myself an sport lover and I try to practice it always I can, especially football, basketball, tennis and jogging, but I also use the most relaxed moments to listen music and write. As any good IT, I spend my free time in front of my computer reading my favourites websites and blogs or or simply gaming with the videogame of the moment.
+        text: I consider myself a <span class="underlined">sports</span> lover and I do a lot of sport as much as I can, especially football, basketball, tennis and jogging, but I also use my chill-out time to listen to <span class="underlined">music</span> and <span class="underlined">write</span>. As any good IT, I spend my free time in front of my computer reading articles from my favourite <span class="underlined">websites</span> and <span class="underlined">blogs</span>.
 
 webmap:
-    main: ChristianGH's web map
+    main: ChristianGH's sitemap
     my_cv: My Currículum Vitae
     blog:
         title: Blog (Spanish)

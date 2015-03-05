@@ -1,5 +1,5 @@
 body{
-	font-family: MV Boli, sans-serif;
+	font-family: MV Boli,sans-serif;
 	font-size: 16px;
 	background: url("/images/background.jpg") repeat fixed 0 0 #FFE4B5;
     color: #232323;
@@ -402,6 +402,65 @@ footer #social_list li{
     box-sizing: border-box;
     box-shadow: 3px 4px 6px -3px #000000;
 }
+
+/** UNDERLINING ANIMATION **/
+span.underline{
+    padding: 0 2px;
+    margin: 0 -2px;
+}
+
+span.underlined{
+    -webkit-animation: underlining 3s  ease-in-out;
+    -moz-animation: underlining 3s  ease-in-out;
+    animation: underlining 2s  ease-in-out;
+    
+    background: url("/images/underlined.jpg") no-repeat top left;
+    padding: 0 2px;
+    margin: 0 -2px;
+}
+
+@-webkit-keyframes underlining{
+    from{
+        background: url("/images/underlined.jpg") no-repeat -600px top;
+        padding: 0 2px;
+        margin: 0 -2px;   
+    }
+    
+    to{
+        background: url("/images/underlined.jpg") no-repeat right top;
+        padding: 0 2px;
+        margin: 0 -2px;   
+    }
+}
+
+@-moz-keyframes underlining{
+    from{
+        background: url("/images/underlined.jpg") no-repeat -600px top;
+        padding: 0 2px;
+        margin: 0 -2px;   
+    }
+    
+    to{
+        background: url("/images/underlined.jpg") no-repeat right top;
+        padding: 0 2px;
+        margin: 0 -2px;   
+    }
+}
+
+@keyframes underlining{
+    from{
+        background: url("/images/underlined.jpg") no-repeat -600px top;
+        padding: 0 2px;
+        margin: 0 -2px;   
+    }
+    
+    to{
+        background: url("/images/underlined.jpg") no-repeat right top;
+        padding: 0 2px;
+        margin: 0 -2px;   
+    }
+}
+/** UNDERLINING ANIMATION **/
 
 /** DESKTOP **/
 @media screen and (min-width:901px){

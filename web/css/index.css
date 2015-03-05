@@ -54,9 +54,10 @@
 
 #presentation .my_greeting{
     font-size: 20px;
+    margin: 0 0 10px 0;
 }
 
-#presentation #text{
+#presentation .text_in_foil{
     position: relative;
     float: left;
     width: 100%;
@@ -64,6 +65,8 @@
     box-sizing: border-box;
 }
 
+.foil_2_free_space_left, .foil_2_image_space_left,
+.foil_3_free_space_left, .foil_3_image_space_left,
 .foil_4_free_space_left, .foil_4_free_space_right, .foil_4_image_space_left, .foil_4_image_space_right{
     height: 0;
     width: 0;
@@ -72,10 +75,6 @@
 
 /** DESKTOP **/
 @media screen and (min-width:1101px){
-    #presentation .my_greeting{
-        margin: 0 0 20px 0;
-    }
-    
     #presentation .paper .photo{
         width: 220px;
         height: 250px;
@@ -100,11 +99,11 @@
         height: 600px;
     }
     
-    #presentation .paper #text{
+    #presentation .paper .text_in_foil{
         padding: 20px 20px 20px 50px;
     }
     
-    #presentation #text #my_photo_area{
+    #presentation .text_in_foil #my_photo_area{
         position: relative;
         float: left;
         height: 260px;
@@ -113,10 +112,6 @@
 }
     
 @media screen and (min-width:768px) and (max-width:1100px){
-    #presentation .my_greeting{
-        margin: 0 0 20px 0;
-    }
-    
     #presentation .paper .photo{
         width: 220px;
         height: 250px;
@@ -142,12 +137,12 @@
         background: url("/images/cuadricula_horizontal.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     }
     
-    #presentation .paper #text{
+    #presentation .paper .text_in_foil{
         padding: 50px 20px 20px 20px;
         
     }
     
-    #presentation #text #my_photo_area{
+    #presentation .text_in_foil #my_photo_area{
         position: relative;
         float: left;
         height: 260px;
@@ -156,10 +151,38 @@
     
     #presentation #backend_graph,
     #presentation #frontend_graph{
-        position: relative;
-        float: left;
+        position: absolute;
+        bottom: 0;
+        left: 0;
         width: auto;
+    }
+    
+    .foil_2_free_space_left{
+        float: left;
+        clear: left;
+        width: 0;
         height: 150px;
+    }
+    
+    .foil_2_image_space_left{
+        float: left;
+        clear: left;
+        width: 320px;
+        height: 250px;
+    }
+    
+    .foil_3_free_space_left{
+        float: left;
+        clear: left;
+        width: 0;
+        height: 150px;
+    }
+    
+    .foil_3_image_space_left{
+        float: left;
+        clear: left;
+        width: 430px;
+        height: 250px;
     }
     
     #presentation .paper .photo#football_picture{
@@ -210,12 +233,8 @@
         height: 600px;
     }
     
-    #presentation .paper #text{
+    #presentation .paper .text_in_foil{
         padding: 20px 20px 20px 50px;
-    }
-    
-    #presentation .my_greeting{
-        margin: 0 0 25px 0;
     }
     
     #presentation .paper .photo{
@@ -246,7 +265,7 @@
         width: 16px;
     }
     
-    #presentation #text #my_photo_area{
+    #presentation .text_in_foil #my_photo_area{
         position: relative;
         float: left;
         height: 240px;
@@ -262,12 +281,8 @@
         height: auto;
     }
     
-    #presentation .paper #text{
+    #presentation .paper .text_in_foil{
         padding: 10px 10px 10px 40px;
-    }
-    
-    #presentation .my_greeting{
-        margin: 0 0 20px 0;
     }
     
     #presentation .paper .photo{
@@ -297,7 +312,7 @@
         width: 12px;
     }
     
-    #presentation #text #my_photo_area{
+    #presentation .text_in_foil #my_photo_area{
         position: relative;
         float: left;
         height: 210px;
