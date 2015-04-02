@@ -11,11 +11,16 @@
         <meta name="author" content="Christian Garcia"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    {% block css %}
     {% stylesheets
-        'css/*'
+        'css/header.css'
+        'css/nav.css'
+        'css/main.css'
+        'css/footer.css'
         filter='cssrewrite' output='css/compiled/all.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
+    {% endblock %}
     
 		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>

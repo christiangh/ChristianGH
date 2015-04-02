@@ -6,6 +6,11 @@
     <meta name="keywords" content="{{ 'meta.contact.keywords'|trans }}" />
 {% endblock %}
 
+{% block css %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}" />
+{% endblock %}
+
 {% block main %}
 
 <main>

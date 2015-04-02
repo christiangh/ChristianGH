@@ -1,0 +1,351 @@
+#contents{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/** PIN **/
+#contents_pin{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    width: 300px;
+    height: 130px;
+    margin-left: -150px;
+    z-index: 1;
+}
+
+#contents_pin #header_pin{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+#contents_pin #header_pin .circle_pin{
+    position: relative;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    border: 20px solid #6E6E6E;
+    border-radius: 50%;
+}
+
+#contents_pin #header_pin .trapezoid_pin{
+    position: relative;
+    margin: -15px auto 0;
+    width: 40px;
+    height: 0;
+    border-bottom: 30px solid #6E6E6E;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    z-index: 2;
+}
+
+#contents_pin #body_pin{
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#contents_pin #body_pin .center_pin{
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    height: 60px;
+    background: -webkit-linear-gradient(top, #6E6E6E , #585858); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, #6E6E6E, #585858); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, #6E6E6E, #585858); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #6E6E6E, #585858); /* Standard syntax */
+    box-shadow: 8px 30px 13px -10px #000000;
+    z-index: 1;
+}
+
+#contents_pin #body_pin .trangle_left_pin{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #C4C7CE;
+    border-left: 80px solid transparent;
+    box-shadow: 9px 5px 8px -7px #000000;
+    z-index: 0;
+}
+
+#contents_pin #body_pin .trangle_right_pin{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #C4C7CE;
+    border-right: 80px solid transparent;
+    box-shadow: -4px 5px 13px -9px #000000;
+    z-index: 3;
+}
+
+.screw_pin{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #74777C;
+    text-indent: 0;
+    z-index: 5;
+}
+
+#contents_pin #body_pin .trangle_left_pin .screw_pin{
+    top: 15px;
+    right: 5px;
+}
+
+#contents_pin #body_pin .trangle_right_pin .screw_pin{
+    top: 15px;
+    left: 5px;
+}
+
+#contents_pin #footer_pin{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    box-shadow: 2px 5px 13px -7px #000000
+}
+
+#contents_pin #footer_pin .footer_pin_top{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 30% 30% 0 0;
+    background: -webkit-linear-gradient(top, #585858 , #505050); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, #585858, #505050); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, #585858, #505050); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #585858, #505050); /* Standard syntax */
+    z-index: 2;
+}
+
+#contents_pin #footer_pin .footer_pin_bottom{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #424242;
+    z-index: 2;
+}
+/** PIN **/
+
+#contents_table{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    /*background: url("/images/table.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    background-color: #5882FA;
+    padding: 80px 30px 50px;
+    box-sizing: border-box;
+    border-radius: 1em;
+    box-shadow: 3px 4px 6px -3px #000000;
+}
+
+#contents_area{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+    background-color: white;
+    padding: 25px 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 6px -3px #000000;
+}
+
+#contents_area #contents_title{
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 0 20px;
+}
+
+#content_list{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #000000;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#content_list li{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#content_list li.row_title{
+    background-color: #D8D8D8;
+    font-family: arial;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+}
+
+#content_list li .row_1{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 7px 5px;
+    border-right: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#content_list li .row_2{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 7px 5px;
+    border-right: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+#content_list li .row_3{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 7px 5px;
+    box-sizing: border-box;
+}
+
+#content_list .category{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    padding: 0;
+    margin: 0 0 20px;
+    list-style: none;
+}
+
+/** PHONE **/
+@media screen and (max-width:600px){
+    #contents_table{
+        padding: 50px 15px 30px;
+    }
+    
+    /** PIN **/
+    #contents_pin{
+        width: 120px;
+        left: 50%;
+        margin-left: -60px;
+    }
+    
+    #contents_pin #header_pin{
+        position: relative;
+        float: left;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    }
+    
+    #contents_pin #header_pin .circle_pin{
+        width: 14px;
+        height: 14px;
+        border: 14px solid #6E6E6E;
+    }
+    
+    #contents_pin #header_pin .trapezoid_pin{
+        margin: -5px auto 0;
+        width: 20px;
+        border-bottom: 30px solid #6E6E6E;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+    
+    #contents_pin #body_pin .center_pin{
+        width: 60px;
+        height: 30px;
+    }
+    
+    #contents_pin #body_pin .trangle_left_pin{
+        border-bottom: 25px solid #C4C7CE;
+        border-left: 30px solid transparent;
+        left: 0;
+    }
+    
+    #contents_pin #body_pin .trangle_right_pin{
+        border-bottom: 25px solid #C4C7CE;
+        border-right: 30px solid transparent;
+        right: 0;
+    }
+    
+    .screw_pin{
+        width: 8px;
+        height: 8px;
+    }
+    
+    #contents_pin #body_pin .trangle_left_pin .screw_pin{
+        top: 12px;
+        right: 5px;
+    }
+    
+    #contents_pin #body_pin .trangle_right_pin .screw_pin{
+        top: 12px;
+        left: 5px;
+    }
+    
+    #contents_pin #footer_pin{
+        height: 30px;
+    }
+    
+    #contents_pin #footer_pin .footer_pin_top{
+        height: 20px;
+    }
+    /** PIN **/
+    
+    #contents_area #contents_title{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #content_list li .row_1{
+        width: 100%;
+        border-right: none;
+    }
+    
+    #content_list li .row_2{
+        display: none;
+    }
+    
+    #content_list li .row_3{
+        display: none;
+    }
+}
+/** PHONE **/

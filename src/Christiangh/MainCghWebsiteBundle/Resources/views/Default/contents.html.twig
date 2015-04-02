@@ -1,0 +1,59 @@
+{% extends 'ChristianghMainCghWebsiteBundle::layout.html.twig' %}
+
+{% block metas %}
+    <title>{{ 'meta.contents.title'|trans }}</title>
+    <meta name="description" content="{{ 'meta.contents.description'|trans }}" />
+    <meta name="keywords" content="{{ 'meta.contents.keywords'|trans }}" />
+{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/contents.css') }}" />
+{% endblock %}
+
+{% block main %}
+
+<main>
+    <section id="contents">
+        <div id="contents_pin">
+            <div id="header_pin">
+                <div class="circle_pin"></div>
+                <div class="trapezoid_pin"></div>
+            </div>
+            <div id="body_pin">
+                <div class="center_pin"></div>
+                <div class="trangle_left_pin">
+                    <div class="screw_pin"></div>
+                </div>
+                <div class="trangle_right_pin">
+                    <div class="screw_pin"></div>
+                </div>
+            </div>
+            <div id="footer_pin">
+                <div class="footer_pin_top"></div>
+                <div class="footer_pin_bottom"></div>
+            </div>
+        </div>
+        <div id="contents_table">
+            <div id="contents_area">
+                <p id="contents_title">{{ 'contents.title'|trans }}</p>
+                <ul id="content_list">
+                    <li class="row_title">
+                        <div class="row_1">{{ 'contents.table.name'|trans }}</div>
+                        <div class="row_2">{{ 'contents.table.category'|trans }}</div>
+                        <div class="row_3">{{ 'contents.table.collection'|trans }}</div>
+                    </li>
+                    {% for content in contents %}
+                        <li>
+                            <div class="row_1"><a href="{{ url('christiangh_main_cgh_website_content', {"content": content.getKey(), "translate": "content"} ) }}" class="link_to_page" title="{{ 'contents.view'|trans }} {{ content.getName(app.request.locale) }}">{{ content.getName(app.request.locale) }}</a></div>
+                            <div class="row_2">{{ content.getCategory().getName(app.request.locale) }}</div>
+                            <div class="row_3">{{ content.getCollection().getName(app.request.locale) }}</div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

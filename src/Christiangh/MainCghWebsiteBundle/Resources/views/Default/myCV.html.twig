@@ -5,6 +5,11 @@
     <meta name="description" content="{{ 'meta.my_cv.description'|trans }}" />
     <meta name="keywords" content="{{ 'meta.my_cv.keywords'|trans }}" />
 {% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/my_cv.css') }}" />
+{% endblock %}
  
 {% block main %}
 

@@ -23,8 +23,8 @@
 /web/js/jquery-ui-1.11.2.min.js
 /web/robots.txt
 /web/app_dev.php
-/web/css/compile/*
-/web/js/compile/*
+/web/css/compiled/*
+/web/js/compiled/*
 /web/ni/*
 /.project
 /composer.json

@@ -5,7 +5,12 @@ namespace Christiangh\MainCghWebsiteBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use Christiangh\MainCghWebsiteBundle\Entity\Email;
+use Christiangh\MainCghWebsiteBundle\Entity\Content;
+use Christiangh\MainCghWebsiteBundle\Entity\CategoryContent;
+use Christiangh\MainCghWebsiteBundle\Entity\CollectionContent;
+
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class DefaultController extends Controller
 {
@@ -76,6 +81,41 @@ class DefaultController extends Controller
     public function myCVAction(Request $request)
     {
         return $this->render('ChristianghMainCghWebsiteBundle:Default:myCV.html.twig', array('current_section_class' => 'my_cv_color'));
+    }
+    
+    public function contentsAction(Request $request)
+    {
+        //Open connection
+        $em = $this->getDoctrine()->getManager();
+        
+        $contents = $em->getRepository('ChristianghMainCghWebsiteBundle:Content')->findAll();
+        
+        return $this->render('ChristianghMainCghWebsiteBundle:Default:contents.html.twig', array('current_section_class' => 'contents_color', 'contents' => $contents));
+    }
+    
+    public function contentAction(Request $request)
+    {
+        //Open connection
+        $em = $this->getDoctrine()->getManager();
+        
+        $url_structure = explode("/", $request->get('content'));
+        $content_url = $url_structure[1];
+        
+        $content = $em->getRepository('ChristianghMainCghWebsiteBundle:Content')->findOneByUrl( $content_url, $request->get('_locale') );
+        
+        if(empty($content)){
+            //Content's name not found
+            throw new NotFoundHttpException("Page not found");
+        }
+        
+        $final_content_url = $content->getCategory()->getUrl($request->get('_locale'))."-".$content->getCollection()->getUrl($request->get('_locale'))."/".$content->getUrl($request->get('_locale'));
+        
+        if($final_content_url != $request->get('content')){
+            //Incorrect content's name or incorrect url
+            throw new NotFoundHttpException("Page not found");
+        }
+        
+        return $this->render('ChristianghMainCghWebsiteBundle:Default:content.html.twig', array('current_section_class' => 'contents_color', "content" => $content));
     }
     
     public function webMapAction(Request $request)

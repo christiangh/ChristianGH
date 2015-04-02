@@ -54,4 +54,9 @@ $(function() {
         underlining();
     });
     
+    //Changing nav selector
+    $("#section_select").change(function(){
+        window.location.href = $(this).val();
+    });
+    
 });

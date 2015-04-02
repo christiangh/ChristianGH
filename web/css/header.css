@@ -1,0 +1,377 @@
+/** HEADER **/
+header{
+	position: relative;
+	width: 100%;
+}
+
+header #anillas{
+	position: absolute;
+	width: 100%;
+    top: -24px;
+    z-index: 2;
+    height: 50px;
+    text-align: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+header .anillas{
+    width: auto;
+    height: 42px;
+}
+
+header #note_book_title{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	margin-top: 24px;
+	padding-top: 22px;
+	background-color: #FFFFFF;
+	box-shadow: 3px 4px 6px -3px #000000;
+    z-index: 1;
+}
+
+header #note_book_title #title_texts_content{
+    position: relative;
+    float: right;
+    width: auto;
+}
+
+header #note_book_title #languages_title .language{
+    position: relative;
+   	float: left;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+header #note_book_title #languages_title .language.language_selected{
+    background: url("/images/pen-green.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #0ABE0A;
+    border-radius: 30%;
+}
+/** HEADER **/
+
+/** DESKTOP **/
+@media screen and (min-width:1101px){
+    header #note_book_title #logo-cgh{
+        position: relative;
+        float: left;
+        width: 300px;
+        margin: 50px 0 50px 50px;
+    }
+    
+    header #note_book_title #title_texts_content{
+        margin: 50px 50px 50px 0;
+    }
+
+    header #note_book_title #title_texts_content #main_title{
+    	position: relative;
+    	float: left;
+        width: 350px;
+    	margin: 0 50px 50px;
+    }
+    
+    header #note_book_title #title_texts_content #secondary_title{
+    	position: relative;
+    	float: left;
+        clear: both;
+        width: 450px;
+    	margin: 0;
+    }
+    
+    header #note_book_title #languages_title{
+    	position: absolute;
+        bottom: 50px;
+        right: 50px;
+        width: auto;
+    }
+    
+    header #note_book_title #languages_title .language{
+    	margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width:901px) and (max-width: 1100px){
+    header #note_book_title #logo-cgh{
+        position: relative;
+        float: left;
+        width: 300px;
+        margin: 50px;
+    }
+    
+    header #note_book_title #title_texts_content{
+        margin: 50px 50px 50px 0;
+    }
+
+    header #note_book_title #title_texts_content #main_title{
+    	position: relative;
+    	float: left;
+        width: 300px;
+    	margin: 0 50px 30px;
+    }
+    
+    header #note_book_title #title_texts_content #secondary_title{
+    	position: relative;
+    	float: left;
+        clear: both;
+        width: 400px;
+    	margin: 0;
+    }
+    
+    header #note_book_title #languages_title{
+    	position: absolute;
+        bottom: 50px;
+        right: 50px;
+        width: auto;
+    }
+    
+    header #note_book_title #languages_title .language{
+    	margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width: 900px){
+    header #note_book_title{
+        height: 310px;
+    }
+    
+    header #note_book_title #logo-cgh{
+        position: relative;
+        float: left;
+        width: 250px;
+        margin: 30px;
+    }
+    
+    header #note_book_title #title_texts_content{
+        margin: 30px 30px 30px 0;
+    }
+
+    header #note_book_title #title_texts_content #main_title{
+    	position: relative;
+    	float: left;
+        width: 300px;
+    	margin: 0 25px 15px;
+    }
+    
+    header #note_book_title #title_texts_content #secondary_title{
+    	position: relative;
+    	float: left;
+        clear: both;
+        width: 350px;
+    	margin: 0;
+    }
+    
+    header #note_book_title #languages_title{
+    	position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: auto;
+    }
+    
+    header #note_book_title #languages_title .language{
+    	margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 800px){
+    header #note_book_title{
+        height: 310px;
+    }
+    
+    header #note_book_title #logo-cgh{
+        position: relative;
+        float: left;
+        width: 250px;
+        margin: 30px;
+    }
+    
+    header #note_book_title #title_texts_content{
+        margin: 30px 30px 30px 0;
+    }
+
+    header #note_book_title #title_texts_content #main_title{
+    	position: relative;
+    	float: left;
+        width: 300px;
+    	margin: 0 25px 15px;
+    }
+    
+    header #note_book_title #title_texts_content #secondary_title{
+    	position: relative;
+    	float: left;
+        clear: both;
+        width: 350px;
+    	margin: 0;
+    }
+    
+    header #note_book_title #languages_title{
+    	position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: auto;
+    }
+    
+    header #note_book_title #languages_title .language{
+    	margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 800px){
+    header #note_book_title{
+        height: 310px;
+    }
+    
+    header #note_book_title #logo-cgh{
+        position: relative;
+        float: left;
+        width: 250px;
+        margin: 30px;
+    }
+    
+    header #note_book_title #title_texts_content{
+        margin: 30px 30px 30px 0;
+    }
+
+    header #note_book_title #title_texts_content #main_title{
+    	position: relative;
+    	float: left;
+        width: 300px;
+    	margin: 0 25px 15px;
+    }
+    
+    header #note_book_title #title_texts_content #secondary_title{
+    	position: relative;
+    	float: left;
+        clear: both;
+        width: 350px;
+    	margin: 0;
+    }
+    
+    header #note_book_title #languages_title{
+    	position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: auto;
+    }
+    
+    header #note_book_title #languages_title .language{
+    	margin: 0 0 0 20px;
+    }
+}
+/** DESKTOP **/
+
+/** TABLET **/
+@media screen and (min-width:601px) and (max-width:768px){
+    header #note_book_title{
+        height: 275px;
+        text-align: center;
+    }
+    
+    header #note_book_title #logo-cgh{
+        position: relative;
+        float: left;
+        width: 215px;
+        margin: 30px 15px 30px 30px;
+    }
+    
+    header #note_book_title #title_texts_content{
+        margin: 30px 30px 30px 0;
+    }
+
+    header #note_book_title #title_texts_content #main_title{
+    	position: relative;
+    	float: left;
+        width: 200px;
+    	margin: 0 25px 15px;
+    }
+    
+    header #note_book_title #title_texts_content #secondary_title{
+    	position: relative;
+    	float: left;
+        clear: both;
+        width: 250px;
+    	margin: 0;
+    }
+    
+    header #note_book_title #languages_title{
+    	position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: auto;
+    }
+    
+    header #note_book_title #languages_title .language{
+        height: 20px;
+        width: auto;
+        padding: 8px;
+    }
+    
+    header #note_book_title #languages_title #language_es{
+    	margin: 0 20px 0 0;
+    }
+}
+/** TABLET **/
+
+/** PHONE **/
+@media screen and (max-width:600px){
+    header #anillas{
+        top: 0;
+    }
+    
+    header #note_book_title{
+        position: relative;
+        float: left;
+        height: auto;
+        margin: 24px 0 0 0;
+        padding: 20px 0;
+    }
+    
+    header #note_book_title #logo-cgh{
+        position: relative;
+        width: 40%;
+        margin: 20px 30%;
+    }
+    
+    header #note_book_title #title_texts_content{
+        position: relative;
+        float: left;
+        margin: 0 5%;
+        width: 40%;
+        clear: both;
+    }
+    
+    header #note_book_title #title_texts_content #main_title{
+        position: relative;
+        float: left;
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    header #note_book_title #title_texts_content #secondary_title{
+        position: relative;
+        float: left;
+        clear: both;
+        width: 100%;
+        margin: 10px 0 0;
+    }
+    
+    header #note_book_title #languages_title{
+        position: absolute;
+        bottom: 20px;
+        right: 5%;
+        width: auto;
+        max-width: 40%;
+    }
+    
+    header #note_book_title #languages_title .language{
+        height: 20px;
+        width: auto;
+        padding: 8px;
+    }
+    
+    header #note_book_title #languages_title #language_es{
+    	margin: 0 15px 0 0;
+    }
+}
+/** PHONE **/

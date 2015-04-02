@@ -6,31 +6,46 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Email
+ *
+ * @ORM\Table(name="email")
+ * @ORM\Entity
  */
 class Email
 {
     /**
      * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="user_name", type="string", length=255)
      */
     private $userName;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="user_email", type="string", length=255)
      */
     private $userEmail;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="message", type="text")
      */
     private $message;
 
     /**
      * @var \DateTime
+     *
+     * @ORM\Column(name="sent_date", type="datetime")
      */
     private $sentDate;
 

@@ -15,6 +15,10 @@ meta:
         title: ChristianGH - Mapa web
         description: Mapa web completo de la página de Christian García Herreras
         keywords: Christian García Herreras, Mapa web, Contenidos
+    contents:
+        title: ChristianGH - Contenidos
+        description: Contenidos web de Christian García Herreras
+        keywords: Christian García Herreras, Contenidos, Categorías, Colecciones
     error:
         404:
             title: ChristianGH - Error 404
@@ -67,6 +71,22 @@ contact:
         name: Nombre
         email: Email
         send: Enviar
+
+contents:
+    title: Contenidos
+    table:
+        name: Nombre del contenido
+        category: Categoría
+        collection: Colección
+    view: Ver
+
+content:
+    title:
+        category: Categoría
+        collection: Colección
+    listing:
+        label: Listado de contenidos
+        title: Ir al listado de contenidos
 
 error:
     404:

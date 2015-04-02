@@ -6,6 +6,11 @@
     <meta name="keywords" content="{{ 'meta.home.keywords'|trans }}" />
     <meta name="google-site-verification" content="6Fi--Jm9wFjg1M4NaM-inczcouoZTXahO_dg48IGEqA" />
 {% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
+{% endblock %}
  
 {% block main %}
 
@@ -15,7 +20,7 @@
         <article class="paper">
             <div id="main_picture" class="photo">
                 <img src="{{ asset('images/clip.png') }}" id="clip_picture" />
-                <img src="{{ asset('images/christian_garcia_herreras_main.jpg') }}" class="photo_image" />
+                <img src="{{ asset('images/christian_garcia_herreras-dublin.jpg') }}" class="photo_image" alt="Christian García Herreras, Dublin" {% if app.request.locale == 'es' %}title="Foto en Dublin (Irlanda)"{% else %}title="Picture in Dublin (Ireland)"{% endif %} />
             </div>
             <div class="text_in_foil">
                 <div id="my_photo_area"></div>
@@ -29,7 +34,7 @@
                 <div class="foil_2_image_space_left"></div>
                 <h2 class="my_greeting">{{ 'home.paper2.title'|trans }}</h2>
                 <p>{{ 'home.paper2.text'|trans|raw }}</p>
-                <img src="{{ asset('images/backend-graph.png') }}" id="backend_graph" />
+                <img src="{{ asset('images/backend_graph.png') }}" id="backend_graph" alt="Christian García Herreras, backend" {% if app.request.locale == 'es' %}title="Mis conocimientos en programación backend"{% else %}title="My backend knowledge"{% endif %} />
             </div>
         </article>
         <article class="paper">
@@ -38,7 +43,7 @@
                 <div class="foil_3_image_space_left"></div>
                 <h2 class="my_greeting">{{ 'home.paper3.title'|trans }}</h2>
                 <p>{{ 'home.paper3.text'|trans|raw }}</p>
-                <img src="{{ asset('images/frontend-graph-'~app.request.locale~'.png') }}" id="frontend_graph" />
+                <img src="{{ asset('images/frontend_graph_'~app.request.locale~'.png') }}" id="frontend_graph" alt="Christian García Herreras, frontend" {% if app.request.locale == 'es' %}title="Mis conocimientos en programación frontend"{% else %}title="My frontend knowledge"{% endif %} />
             </div>
         </article>
         <article class="paper">
@@ -51,10 +56,10 @@
                 <p>{{ 'home.paper4.text'|trans|raw }}</p>
             </div>
             <div id="football_picture" class="photo">
-                <img src="{{ asset('images/football-picture.jpg') }}" class="photo_image" />
+                <img src="{{ asset('images/christian_garcia_herreras_football.jpg') }}" class="photo_image" {% if app.request.locale == 'es' %}alt="Christian García Herreras, fútbol" title="Jugando a fútbol"{% else %}alt="Christian García Herreras, football" title="Me playing football"{% endif %} />
             </div>
             <div id="travel_picture" class="photo">
-                <img src="{{ asset('images/travel-picture.jpg') }}" class="photo_image" />
+                <img src="{{ asset('images/christian_garcia_herreras_cliffs_of_moher.jpg') }}" class="photo_image" {% if app.request.locale == 'es' %}alt="Christian García Herreras, Cliffs of Moher" title="Foto en Cliffs of Moher"{% else %}alt="Christian García Herreras, Cliffs of Moher (Ireland)" title="Picture in Cliffs of Moher"{% endif %} />
             </div>
         </article>
     </section>

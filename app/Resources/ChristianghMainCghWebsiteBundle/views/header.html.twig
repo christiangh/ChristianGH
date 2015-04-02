@@ -4,31 +4,36 @@
     {% spaceless %}
     <div id="anillas">
         <img src="{{ asset('images/anillas.png') }}" class="anillas" />
-        {#
-		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
-		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
-		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
-		<img src="{{ asset('images/anilla.png') }}" class="anilla" />
-        #}
 	</div>
     {% endspaceless %}
 	
 	<div id="note_book_title">
-		<img id="main_title" src="{{ asset('images/christiangh.png') }}" />
+        <a href="{{ url('christiangh_main_cgh_website_homepage') }}"><img id="logo-cgh" src="{{ asset('images/logo_cgh.png') }}" alt="Christian García Herreras Web" title="CGH Home" /></a>
+        <div id="title_texts_content">
+            <img id="main_title" src="{{ asset('images/christiangh.png') }}" alt="ChristianGH" />
+            <img id="secondary_title" {% if app.request.locale == 'es' %}src="{{ asset('images/desarrollador_web.png') }}" alt="Desarrollador web" title="Desarrollador web" {% else %} src="{{ asset('images/web_developer.png') }}" alt="Web Developer title="Web Developer"{% endif %} />
+        </div>
 		<div id="languages_title">
         {% if app.request.locale == 'es' %}
-			<img src="{{ asset('images/language-es.png') }}" class="language language_selected" />
+			<img id="language_es" src="{{ asset('images/language-es.png') }}" class="language language_selected" alt="ES" title="Seleccionada la versión en Español" />
         {% else %}
-            <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'es'}) }}"><img src="{{ asset('images/language-es.png') }}" class="language" /></a>
+            {% if app.request.attributes.get('_route') != 'christiangh_main_cgh_website_content' %}
+                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'es'}) }}"><img id="language_es" src="{{ asset('images/language-es.png') }}" alt="ES" title="Spanish version" class="language" /></a>
+            {% else %}
+                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'es', "content": content.getKey(), "translate": "content"}) }}"><img id="language_es" src="{{ asset('images/language-es.png') }}" alt="ES" title="Spanish version" class="language" /></a>
+            {% endif %}
         {% endif %}
         {% if app.request.locale == 'en' %}
-            <img src="{{ asset('images/language-en.png') }}" class="language language_selected" />
+            <img id="language_en" src="{{ asset('images/language-en.png') }}" class="language language_selected" alt="EN" title="English version selected" />
         {% else %}
-            <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'en'}) }}"><img src="{{ asset('images/language-en.png') }}" class="language" /></a>
+            {% if app.request.attributes.get('_route') != 'christiangh_main_cgh_website_content' %}
+                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'en'}) }}"><img id="language_en" src="{{ asset('images/language-en.png') }}" class="language" alt="EN" title="Versión en Inglés" /></a>
+            {% else %}
+                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'en', "content": content.getKey(), "translate": "content"}) }}"><img id="language_en" src="{{ asset('images/language-en.png') }}" class="language" alt="EN" title="Versión en Inglés" /></a>
+            {% endif %}
         {% endif %}
 		</div>
         <br />
-		<img id="secondary_title" src="{% if app.request.locale == 'es' %}{{ asset('images/desarrollador-web.png') }}{% else %}{{ asset('images/web-developer.png') }}{% endif %}" />
 	</div>
 </header>
 

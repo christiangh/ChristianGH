@@ -5,8 +5,8 @@
         <div id="main_post_it_pegado" class="post_it_pegado"></div>
         <div id="main_post_it" class="post_it">
             <p>{{ 'footer.main'|trans }}</p>
-            <p>2014 - 2015</p>
-            <a href="{{ url('christiangh_main_cgh_website_web_map') }}" class="link_to_page">{{ 'footer.web_map'|trans }}</a>
+            <p>2014 - {{ "now"|date("Y") }}</p>
+            <a href="{{ url('christiangh_main_cgh_website_web_map') }}" class="link_to_page" {% if app.request.locale == 'es' %}title="Mapa de la web"{% else %}title="Sitemap"{% endif %}>{{ 'footer.web_map'|trans }}</a>
         </div>
     </div>
     <div id="social_footer">
@@ -20,37 +20,37 @@
             <li id="social_linkedin">
                 <div class="social_post_it_pegado">&nbsp;</div>
                 <div class="social_post_it">
-                    <a href="https://www.linkedin.com/in/christiangh" target="_blank" title="LinkedIn"><img src="{{ asset('images/social/linkedin.png') }}" /></a>
+                    <a href="https://www.linkedin.com/in/christiangh" target="_blank" title="LinkedIn"><img src="{{ asset('images/social/linkedin.png') }}" alt="Linkedin" title="LinkedIn" /></a>
                 </div>
             </li>
             <li id="social_facebook">
                 <div class="social_post_it_pegado"></div>
                 <div class="social_post_it">
-                    <a href="https://www.facebook.com/christianghcom" target="_blank" title="Facebook"><img src="{{ asset('images/social/facebook.png') }}" /></a>
+                    <a href="https://www.facebook.com/christianghcom" target="_blank" title="Facebook"><img src="{{ asset('images/social/facebook.png') }}" alt="Facebook" /></a>
                 </div>
             </li>
             <li id="social_twitter">
                 <div class="social_post_it_pegado"></div>
                 <div class="social_post_it">
-                    <a href="https://twitter.com/christiangh86" target="_blank" title="Twitter"><img src="{{ asset('images/social/twitter.png') }}" /></a>
+                    <a href="https://twitter.com/christiangh86" target="_blank" title="Twitter"><img src="{{ asset('images/social/twitter.png') }}" alt="Twitter" /></a>
                 </div>
             </li>
             <li id="social_google">
                 <div class="social_post_it_pegado"></div>
                 <div class="social_post_it">
-                    <a href="https://plus.google.com/+ChristianGarcía86" target="_blank" title="Google+"><img src="{{ asset('images/social/google.png') }}" /></a>
+                    <a href="https://plus.google.com/+ChristianGarcía86" target="_blank" title="Google+"><img src="{{ asset('images/social/google.png') }}" alt="Google+" /></a>
                 </div>
             </li>
             <li id="social_github">
                 <div class="social_post_it_pegado"></div>
                 <div class="social_post_it">
-                    <a href="https://github.com/christiangh" target="_blank" title="GitHub"><img src="{{ asset('images/social/github.png') }}" /></a>
+                    <a href="https://github.com/christiangh" target="_blank" title="GitHub"><img src="{{ asset('images/social/github.png') }}" alt="GitHub" /></a>
                 </div>
             </li>
             <li id="social_rss">
                 <div class="social_post_it_pegado"></div>
                 <div class="social_post_it">
-                    <a href="" target="_blank" title="RSS"><img src="{{ asset('images/social/rss.png') }}" /></a>
+                    <a href="http://www.christiangh.com/blog/feed/" target="_blank" title="RSS"><img src="{{ asset('images/social/rss.png') }}" alt="Rss ChristianGH Blog" /></a>
                 </div>
             </li>
         </ul>
