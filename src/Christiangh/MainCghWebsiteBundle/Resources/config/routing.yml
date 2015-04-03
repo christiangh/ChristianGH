@@ -21,5 +21,7 @@ christiangh_main_cgh_website_content:
         content: .*
 
 christiangh_main_cgh_website_web_map:
-    locales:  { es: "/es/mapa-web.html", en: "/en/sitemap.html" }
+    locales:  { es: "/es/mapa-web.{_format}", en: "/en/sitemap.{_format}" }
     defaults: { _controller: ChristianghMainCghWebsiteBundle:Default:webMap }
+    requirements:
+        _format:  html|xml

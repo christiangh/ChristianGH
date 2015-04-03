@@ -34,10 +34,18 @@
 }
 
 #blackboard .web_sections{
-    display: inline-block;
+    position: relative;
     padding: 0;
     width: 45%;
-    margin: 0 2.5% 0 0;
+    margin: 0 2.5% 0;
+}
+
+#blackboard .web_sections.left{
+    float: left;
+}
+
+#blackboard .web_sections.right{
+    float: right;
 }
 
 #blackboard .web_sections li{

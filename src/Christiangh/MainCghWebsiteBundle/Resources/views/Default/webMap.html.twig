@@ -16,7 +16,7 @@
 <main>
     <section id="blackboard" class="dk_crayon_crumble">
         <p>{{ 'webmap.main'|trans }}</p>
-        <ul class="web_sections">
+        <ul class="web_sections left">
             <li><a href="{{ url('christiangh_main_cgh_website_homepage') }}">- {{ 'navigation.home'|trans }}</a></li>
             <li><a href="{{ url('christiangh_main_cgh_website_my_cv') }}">- {{ 'webmap.my_cv'|trans }}</a></li>
             <li>
@@ -27,6 +27,9 @@
                     <li><a href="{{ url('ekino_wordpress_catchall', {'url': 'secciones/otros/'}) }}">+ {{ 'webmap.blog.category3'|trans }}</a></li>
                 </ul>
             </li>
+        </ul>
+        <ul class="web_sections right">
+            <li><a href="{{ url('christiangh_main_cgh_website_contents') }}">- {{ 'navigation.contents'|trans }}</a></li>
             <li><a href="{{ url('christiangh_main_cgh_website_contact') }}">- {{ 'navigation.contact'|trans }}</a></li>
         </ul>
     </section>

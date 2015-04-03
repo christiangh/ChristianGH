@@ -6,7 +6,7 @@
         <div id="main_post_it" class="post_it">
             <p>{{ 'footer.main'|trans }}</p>
             <p>2014 - {{ "now"|date("Y") }}</p>
-            <a href="{{ url('christiangh_main_cgh_website_web_map') }}" class="link_to_page" {% if app.request.locale == 'es' %}title="Mapa de la web"{% else %}title="Sitemap"{% endif %}>{{ 'footer.web_map'|trans }}</a>
+            <a href="{{ url('christiangh_main_cgh_website_web_map', {'_format': 'html'}) }}" class="link_to_page" {% if app.request.locale == 'es' %}title="Mapa de la web"{% else %}title="Sitemap"{% endif %}>{{ 'footer.web_map'|trans }}</a>
         </div>
     </div>
     <div id="social_footer">

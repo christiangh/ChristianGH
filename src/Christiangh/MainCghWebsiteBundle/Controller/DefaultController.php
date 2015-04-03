@@ -115,11 +115,37 @@ class DefaultController extends Controller
             throw new NotFoundHttpException("Page not found");
         }
         
-        return $this->render('ChristianghMainCghWebsiteBundle:Default:content.html.twig', array('current_section_class' => 'contents_color', "content" => $content));
+        return $this->render('ChristianghMainCghWebsiteBundle:Default:content.html.twig', array('current_section_class' => 'contents_color', 'content' => $content));
     }
     
     public function webMapAction(Request $request)
     {
-        return $this->render('ChristianghMainCghWebsiteBundle:Default:webMap.html.twig', array('current_section_class' => 'home_color'));
+        if($request->get('_format') == "html"){
+            return $this->render('ChristianghMainCghWebsiteBundle:Default:webMap.html.twig', array('current_section_class' => 'home_color'));
+        }else{
+            //Open connection
+            $em = $this->getDoctrine()->getManager();
+            
+            $static_urls = array();
+            switch($request->get('_locale')){
+                case "es": $static_urls[] = "http://www.christiangh.com/";
+                           $static_urls[] = "http://www.christiangh.com/es/mi-curriculum-vitae.html";
+                           $static_urls[] = "http://www.christiangh.com/es/contacto.html";
+                           $static_urls[] = "http://www.christiangh.com/es/contenidos.html";
+                    break;
+                
+                case "en": $static_urls[] = "http://www.christiangh.com/en/";
+                           $static_urls[] = "http://www.christiangh.com/en/my-curriculum-vitae.html";
+                           $static_urls[] = "http://www.christiangh.com/en/contact.html";
+                           $static_urls[] = "http://www.christiangh.com/en/contents.html";
+                    break;
+            }
+            
+            $content_urls = $em->getRepository('ChristianghMainCghWebsiteBundle:Content')->getAllUrls( "http://www.christiangh.com", $request->get('_locale') );
+            
+            $urls = array_merge($static_urls, $content_urls);
+            
+            return $this->render('ChristianghMainCghWebsiteBundle:Default:webMap.xml.twig', array('urls' => $urls));
+        }
     }
 }
