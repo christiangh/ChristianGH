@@ -32,7 +32,7 @@
         </div>
         <div id="mail_back">
         {{ form_start(form) }}
-            {{ form_widget(form.message, { 'attr': {'class': 'mail_message'} }) }}
+            {{ form_widget(form.message, { 'attr': {'class': 'mail_message', 'placeholder': 'contact.form.message'|trans} }) }}
             <div id="user_info">
                 <div class="email_field">
                     {{ form_label(form.user_name, 'contact.form.name'|trans) }}

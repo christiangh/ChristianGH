@@ -1,7 +1,7 @@
 body{
 	font-family: MV Boli,sans-serif;
 	font-size: 16px;
-	background: url("/images/background.jpg") repeat fixed 0 0 #FFE4B5;
+	background: url("/images/background.jpg") repeat repeat 0 0 #FFE4B5;
     color: #232323;
     margin: 0;
     padding: 0;

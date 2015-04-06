@@ -30,8 +30,8 @@ nav #nav_list #current_section{
 	height: 10px;
 }
 
-/*
-nav #nav_list #section_list{
+/** NO FLEX **/
+.no-flexbox nav #nav_list #section_list{
 	display: block;
 	width: 99%;
 	height: 50px;
@@ -41,7 +41,7 @@ nav #nav_list #section_list{
 	list-style: none
 }
 
-nav #nav_list #section_list li{
+.no-flexbox nav #nav_list #section_list li{
 	display: inline-block;
 	width: 12.6%;
 	height: 40px;
@@ -51,7 +51,7 @@ nav #nav_list #section_list li{
 	border-bottom-left-radius: 1em;
 }
 
-nav #nav_list #section_list li a{
+.no-flexbox nav #nav_list #section_list li a{
 	position: relative;
 	float: left;
 	width: 100%;
@@ -61,14 +61,14 @@ nav #nav_list #section_list li a{
 	text-decoration: none;       
 }
 
-nav #nav_list #section_list li a span{
+.no-flexbox nav #nav_list #section_list li a span{
 	display: block;
 	text-align: center;
 }
-*/
+/** NO FLEX **/
 
 /** PROP. FLEX **/
-nav #nav_list #section_list{
+.flexbox nav #nav_list #section_list{
 	display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -82,8 +82,10 @@ nav #nav_list #section_list{
 	list-style: none;
 }
 
-nav #nav_list #section_list li{
-	flex: 1;
+.flexbox nav #nav_list #section_list li{
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px;
 	height: 40px;
     margin: 0 10px;
 	padding: 0;
@@ -91,7 +93,7 @@ nav #nav_list #section_list li{
 	border-bottom-left-radius: 1em;
 }
 
-nav #nav_list #section_list li a{
+.flexbox nav #nav_list #section_list li a{
 	position: relative;
 	float: left;
     box-sizing: border-box;
@@ -103,7 +105,7 @@ nav #nav_list #section_list li a{
     margin: 0;
 }
 
-nav #nav_list #section_list li a span{
+.flexbox nav #nav_list #section_list li a span{
 	display: block;
 	text-align: center;
 }

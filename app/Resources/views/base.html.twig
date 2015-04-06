@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
     <head>
         <meta charset="UTF-8" />
     {% block metas %}
@@ -20,6 +20,14 @@
         filter='cssrewrite' output='css/compiled/all.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
+    {% endblock %}
+    
+    {% block modernizr %}
+        {% stylesheets
+            'js/modernizr/*'
+            output='js/compiled/modernizr.js' %}
+            <script src="{{ asset_url }}"></script>
+        {% endstylesheets %}
     {% endblock %}
     
 		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
