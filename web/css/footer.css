@@ -24,7 +24,7 @@ footer #main_post_it{
     box-sizing: border-box;
     float: left;
     width: 100%;
-    height: 116px;
+    height: 112px;
     padding: 5px;
 }
 
@@ -53,8 +53,7 @@ footer #main_post_it p, footer #presocial_post_it p{
 
 footer #main_post_it .link_to_page{
     position: absolute;
-    right: 10px;
-    bottom: 10px;    
+    right: 10px;    
 }
 
 footer #social_list{
@@ -69,7 +68,7 @@ footer #social_list{
 
 footer #social_list li{
     display: inline-block;
-    width: 60px;
+    width: 55px;
     height: 80px;
 }
 
@@ -85,7 +84,7 @@ footer #social_list li{
     position: relative;
     float: left;
     width: 100%;
-    height: 70px;
+    height: 65px;
     text-align: center;
     box-shadow: 3px 4px 6px -3px #000000;
     z-index: 1;
@@ -94,7 +93,7 @@ footer #social_list li{
 .social_post_it img{
     display: inline-block;
     margin-top: 10px;
-    width: 50px;
+    width: 45px;
 }
 
 #social_linkedin .social_post_it{
@@ -137,6 +136,14 @@ footer #social_list li{
     background-color: #AF78C3;
 }
 
+#social_codepen .social_post_it{
+    background-color: #A4A4A4;
+}
+
+#social_codepen .social_post_it_pegado{
+    background-color: #919191;
+}
+
 #social_rss .social_post_it{
     background-color: #F5960F;
 }
@@ -155,15 +162,13 @@ footer #social_list li{
 /** FOOTER **/
 
 /** DESKTOP **/
-@media screen and (min-width:1101px){
+@media screen and (min-width:901px){
     footer #main_footer{
-        width: 38%;
-        max-width: 490px;
+        width: 250px;
     }
     
     footer #social_footer{
-        width: 55%;
-        max-width: 520px;
+        width: 540px;
     }
     
     footer #social_list li{
@@ -171,67 +176,17 @@ footer #social_list li{
     }
 }
 
-@media screen and (min-width:901px) and (max-width: 1100px){
+@media screen and (min-width:769px) and (max-width: 900px){
     footer #main_footer{
-        width: 38%;
-        max-width: 490px;
+        width: 250px;
     }
     
     footer #social_footer{
-        width: 55%;
-        max-width: 520px;
+        width: 450px;
     }
     
     footer #social_list li{
-        margin: 0 2%;
-    }
-}
-
-@media screen and (min-width:801px) and (max-width: 900px){
-    footer #main_footer{
-        width: 38%;
-        max-width: 490px;
-    }
-    
-    footer #social_footer{
-        width: 55%;
-        max-width: 520px;
-    }
-    
-    footer #social_list li{
-        margin: 0 2%;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width: 800px){
-    footer #main_footer{
-        width: 38%;
-        max-width: 490px;
-    }
-    
-    footer #social_footer{
-        width: 55%;
-        max-width: 520px;
-    }
-    
-    footer #social_list li{
-        margin: 0 2%;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width: 800px){
-    footer #main_footer{
-        width: 38%;
-        max-width: 490px;
-    }
-    
-    footer #social_footer{
-        width: 55%;
-        max-width: 520px;
-    }
-    
-    footer #social_list li{
-        margin: 0 2%;
+        margin: 0 1%;
     }
 }
 /** DESKTOP **/
@@ -252,7 +207,7 @@ footer #social_list li{
     }
     
     footer #social_list li{
-        margin: 0 3%;
+        margin: 0 2%;
     }
 }
 /** TABLET **/

@@ -5,8 +5,7 @@
         <div id="main_post_it_pegado" class="post_it_pegado"></div>
         <div id="main_post_it" class="post_it">
             <p>{{ 'footer.main'|trans }}</p>
-            <p>2014 - {{ "now"|date("Y") }}</p>
-            <a href="{{ url('christiangh_main_cgh_website_web_map', {'_format': 'html'}) }}" class="link_to_page" {% if app.request.locale == 'es' %}title="Mapa de la web"{% else %}title="Sitemap"{% endif %}>{{ 'footer.web_map'|trans }}</a>
+            <p>2014 - {{ "now"|date("Y") }} <a href="{{ url('christiangh_main_cgh_website_web_map', {'_format': 'html'}) }}" class="link_to_page" {% if app.request.locale == 'es' %}title="Mapa de la web"{% else %}title="Sitemap"{% endif %}>{{ 'footer.web_map'|trans }}</a></p>
         </div>
     </div>
     <div id="social_footer">
@@ -45,6 +44,12 @@
                 <div class="social_post_it_pegado"></div>
                 <div class="social_post_it">
                     <a href="https://github.com/christiangh" target="_blank" title="GitHub"><img src="{{ asset('images/social/github.png') }}" alt="GitHub" /></a>
+                </div>
+            </li>
+            <li id="social_codepen">
+                <div class="social_post_it_pegado"></div>
+                <div class="social_post_it">
+                    <a href="http://codepen.io/christiangh/" target="_blank" title="CodePen"><img src="{{ asset('images/social/codepen.png') }}" alt="CodePen" /></a>
                 </div>
             </li>
             <li id="social_rss">
