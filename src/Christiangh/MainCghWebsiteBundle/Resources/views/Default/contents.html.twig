@@ -45,7 +45,7 @@
                     </li>
                     {% for content in contents %}
                         <li>
-                            <div class="row_1"><a href="{{ url('christiangh_main_cgh_website_content', {"content": content.getKey(), "translate": "content"} ) }}" class="link_to_page" title="{{ 'contents.view'|trans }} {{ content.getName(app.request.locale) }}">{{ content.getName(app.request.locale) }}</a></div>
+                            <div class="row_1"><a href="{{ url('christiangh_main_cgh_website_content', {"content": content.getKeyName(), "translate": "content"} ) }}" class="link_to_page" title="{{ 'contents.view'|trans }} {{ content.getName(app.request.locale) }}">{{ content.getName(app.request.locale) }}</a></div>
                             <div class="row_2">{{ content.getCategory().getName(app.request.locale) }}</div>
                             <div class="row_3">{{ content.getCollection().getName(app.request.locale) }}</div>
                         </li>

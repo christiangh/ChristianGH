@@ -81,9 +81,9 @@ class Content
     /**
      * @var string
      *
-     * @ORM\Column(name="key", type="string", length=255)
+     * @ORM\Column(name="key_name", type="string", length=255)
      */
-    private $key;
+    private $keyName;
     
     /**
      * @var text
@@ -316,26 +316,26 @@ class Content
     }
     
     /**
-     * Set key
+     * Set keyName
      *
-     * @param string $key
+     * @param string $keyName
      * @return Content
      */
-    public function setKey($key)
+    public function setKey($keyName)
     {
-        $this->key = $key;
+        $this->keyName = $keyName;
 
         return $this;
     }
 
     /**
-     * Get key
+     * Get keyName
      *
      * @return string 
      */
-    public function getKey()
+    public function getKeyName()
     {
-        return $this->key;
+        return $this->keyName;
     }
     
     /**
