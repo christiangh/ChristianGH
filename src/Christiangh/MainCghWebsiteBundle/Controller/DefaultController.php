@@ -24,9 +24,6 @@ class DefaultController extends Controller
     {
         //Crea un email y le asigna los datos
         $email = new Email();
-        $email->setUserName("");
-        $email->setUserEmail("");
-        $email->setMessage($this->get('translator')->trans('contact.form.message', array()));
         
         $form = $this->createFormBuilder($email)
             ->add('user_name', 'text')
@@ -83,6 +80,16 @@ class DefaultController extends Controller
         return $this->render('ChristianghMainCghWebsiteBundle:Default:myCV.html.twig', array('current_section_class' => 'my_cv_color'));
     }
     
+    public function portfolioAction(Request $request)
+    {
+        //Open connection
+        $em = $this->getDoctrine()->getManager();
+        
+        $websites = $em->getRepository('ChristianghMainCghWebsiteBundle:Website')->findAll();
+        
+        return $this->render('ChristianghMainCghWebsiteBundle:Default:portfolio.html.twig', array('current_section_class' => 'portfolio_color', 'websites' => $websites));
+    }
+    
     public function contentsAction(Request $request)
     {
         //Open connection
@@ -130,14 +137,16 @@ class DefaultController extends Controller
             switch($request->get('_locale')){
                 case "es": $static_urls[] = "http://www.christiangh.com/";
                            $static_urls[] = "http://www.christiangh.com/es/mi-curriculum-vitae.html";
-                           $static_urls[] = "http://www.christiangh.com/es/contacto.html";
+                           $static_urls[] = "http://www.christiangh.com/es/portfolio.html";
                            $static_urls[] = "http://www.christiangh.com/es/contenidos.html";
+                           $static_urls[] = "http://www.christiangh.com/es/contacto.html";
                     break;
                 
                 case "en": $static_urls[] = "http://www.christiangh.com/en/";
                            $static_urls[] = "http://www.christiangh.com/en/my-curriculum-vitae.html";
-                           $static_urls[] = "http://www.christiangh.com/en/contact.html";
+                           $static_urls[] = "http://www.christiangh.com/en/portfolio.html";
                            $static_urls[] = "http://www.christiangh.com/en/contents.html";
+                           $static_urls[] = "http://www.christiangh.com/en/contact.html";
                     break;
             }
             

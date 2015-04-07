@@ -1,0 +1,55 @@
+{% extends 'ChristianghMainCghWebsiteBundle::layout.html.twig' %}
+
+{% block metas %}
+    <title>{{ 'meta.portfolio.title'|trans }}</title>
+    <meta name="description" content="{{ 'meta.portfolio.description'|trans }}" />
+    <meta name="keywords" content="{{ 'meta.portfolio.keywords'|trans }}" />
+{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}" />
+{% endblock %}
+
+{% block main %}
+
+<main>
+    <section id="portfolio">
+        <div id="portfolio_cork">
+            <div id="contents_title">
+                <h1 id="contents_message" class="normal_message">{{ 'portfolio.title'|trans }}</h1>
+                <div class="drawing_pin red">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="drawing_pin red">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <ul id="website_list">
+            {% for website in websites %}
+                <li class="{{ website.getPicturePosition() }}">
+                    <div class="drawing_pin {{ website.getPinColor() }}">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <img src="{{ asset('/websites/'~website.getKeyName()~'/main.jpg') }}" alt="{{ website.getName(app.request.locale) }}" title="{{ website.getName(app.request.locale) }}" />
+                    <p>{{ website.getName(app.request.locale) }}<br /><a href="{{ website.getSite(app.request.locale) }}" class="link_to_page" title="{{ 'portfolio.listing.title'|trans }} {{ website.getSite(app.request.locale) }}">{{ 'portfolio.listing.link'|trans }}</a></p>
+                </li>
+            {%endfor %}
+            </ul>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

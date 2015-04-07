@@ -18,7 +18,7 @@
 			<img id="language_es" src="{{ asset('images/language-es.png') }}" class="language language_selected" alt="ES" title="Seleccionada la versión en Español" />
         {% else %}
             {% if app.request.attributes.get('_route') == 'christiangh_main_cgh_website_content' %}
-                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'es', "content": content.getKey(), "translate": "content"}) }}"><img id="language_es" src="{{ asset('images/language-es.png') }}" alt="ES" title="Spanish version" class="language" /></a>
+                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'es', "content": content.getKeyName(), "translate": "content"}) }}"><img id="language_es" src="{{ asset('images/language-es.png') }}" alt="ES" title="Spanish version" class="language" /></a>
             {% elseif app.request.attributes.get('_route') == 'christiangh_main_cgh_website_web_map' %}
                 <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'es', '_format': 'html'}) }}"><img id="language_es" src="{{ asset('images/language-es.png') }}" alt="ES" title="Spanish version" class="language" /></a>
             {% else %}
@@ -29,7 +29,7 @@
             <img id="language_en" src="{{ asset('images/language-en.png') }}" class="language language_selected" alt="EN" title="English version selected" />
         {% else %}
             {% if app.request.attributes.get('_route') == 'christiangh_main_cgh_website_content' %}
-                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'en', "content": content.getKey(), "translate": "content"}) }}"><img id="language_en" src="{{ asset('images/language-en.png') }}" class="language" alt="EN" title="Versión en Inglés" /></a>
+                <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'en', "content": content.getKeyName(), "translate": "content"}) }}"><img id="language_en" src="{{ asset('images/language-en.png') }}" class="language" alt="EN" title="Versión en Inglés" /></a>
             {% elseif app.request.attributes.get('_route') == 'christiangh_main_cgh_website_web_map' %}
                 <a href="{{ url(app.request.attributes.get('_route'), {'locale': 'en', '_format': 'html'}) }}"><img id="language_en" src="{{ asset('images/language-en.png') }}" class="language" alt="EN" title="Versión en Inglés" /></a>
             {% else %}

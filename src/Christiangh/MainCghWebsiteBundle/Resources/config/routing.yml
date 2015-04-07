@@ -10,6 +10,10 @@ christiangh_main_cgh_website_my_cv:
     locales:  { es: "/es/mi-curriculum-vitae.html", en: "/en/my-curriculum-vitae.html" }
     defaults: { _controller: ChristianghMainCghWebsiteBundle:Default:myCV}
 
+christiangh_main_cgh_website_portfolio:
+    locales:  { es: "/es/portfolio.html", en: "/en/portfolio.html" }
+    defaults: { _controller: ChristianghMainCghWebsiteBundle:Default:portfolio}
+
 christiangh_main_cgh_website_contents:
     locales:  { es: "/es/contenidos.html", en: "/en/contents.html" }
     defaults: { _controller: ChristianghMainCghWebsiteBundle:Default:contents}

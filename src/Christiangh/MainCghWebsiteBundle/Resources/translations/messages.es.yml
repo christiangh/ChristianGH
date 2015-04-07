@@ -19,6 +19,10 @@ meta:
         title: ChristianGH - Contenidos
         description: Contenidos web de Christian García Herreras
         keywords: Christian García Herreras, Contenidos, Categorías, Colecciones
+    portfolio:
+        title: ChristianGH - Portfolio
+        description: Portfolio de Christian García Herreras
+        keywords: Christian García Herreras, Portfolio, Mis páginas web
     error:
         404:
             title: ChristianGH - Error 404
@@ -71,6 +75,12 @@ contact:
         name: Nombre
         email: Email
         send: Enviar
+
+portfolio:
+    title: Portfolio de Christian García Herreras
+    listing:
+        link: Ir a la web
+        title: Ir a
 
 contents:
     title: Contenidos
