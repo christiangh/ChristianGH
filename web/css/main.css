@@ -69,10 +69,6 @@ main{
     color: #0404B4;
 }
 
-.subrayado{
-    background-color: yellow;
-}
-
 .button_style{
     width: 80px!important;
     height: 32px!important;
@@ -114,61 +110,8 @@ main{
     box-shadow: 3px 4px 6px -3px #000000;
 }
 
-/** UNDERLINING ANIMATION **/
-span.underline{
+.no-js .highlight{
+    background-color: yellow;
     padding: 0 2px;
     margin: 0 -2px;
 }
-
-span.underlined{
-    -webkit-animation: underlining 3s  ease-in-out forwards;
-    -moz-animation: underlining 3s  ease-in-out forwards;
-    animation: underlining 3s  ease-in-out forwards;
-    
-    background: url("/images/underlined.jpg") no-repeat top left;
-    padding: 0 2px;
-    margin: 0 -2px;
-}
-
-@-webkit-keyframes underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-
-@-moz-keyframes underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-
-@keyframes underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-/** UNDERLINING ANIMATION **/

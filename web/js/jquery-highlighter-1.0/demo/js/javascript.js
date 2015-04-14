@@ -1,10 +1,10 @@
 //Clearing previous highlights
-$("#quixote_title span").highlighter('clear');
+$("#my_title span").highlighter('clear');
 $("#first_block span").highlighter('clear');
 $("#second_block span").highlighter('clear');
 
 //GO!
-$("#quixote_title span").highlighter();
+$("#my_title span").highlighter();
 
 $(this).each(function(index, element){
     if(!$(element).hasClass('highlighter_go')){

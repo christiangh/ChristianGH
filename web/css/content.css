@@ -205,60 +205,6 @@
     border: 2px solid black;
 }
 
-/** UNDERLINING ANIMATION **/
-span.content_underlined{
-    -webkit-animation: content_underlining 3s  ease-in-out forwards;
-    -moz-animation: content_underlining 3s  ease-in-out forwards;
-    animation: content_underlining 3s  ease-in-out forwards;
-    
-    background: url("/images/underlined.jpg") no-repeat top left;
-    padding: 0 2px;
-    margin: 0 -2px;
-}
-
-@-webkit-keyframes content_underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-
-@-moz-keyframes content_underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-
-@keyframes content_underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-/** UNDERLINING ANIMATION **/
-
 /** DESKTOP **/
 @media screen and (min-width:1101px){
     

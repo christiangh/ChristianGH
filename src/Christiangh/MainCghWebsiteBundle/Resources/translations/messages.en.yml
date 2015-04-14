@@ -16,7 +16,7 @@ meta:
         description: Sitemap of Christian García Herreras website
         keywords: Christian García Herreras, Sitemap, Contents
     contents:
-        title: ChristianGH - Contennts
+        title: ChristianGH - Contents
         description: Christian García Herreras web contents
         keywords: Christian García Herreras, Contents, Categories, Collections
     portfolio:
@@ -44,16 +44,16 @@ footer:
 home:
     paper1:
         title: Hello, welcome to my personal website!
-        text: My name is <span class="underlined">Christian García Herreras</span> and I'm a <span class="underlined">web developer</span> from Valencia certified with a <span class="underlined">Technical Engineering in Computer Systems degree</span> (Ingeniería Técnica en Informática de Sistemas) by the Polytechnic University of Valencia (UPV). Currently, I live in <span class="underlined">Dublin</span> (Ireland), with the aim of living new experiences that allow me to grow personally and professionally. Also to improve my Engish skills while I can enjoy all the possibilities that this beautiful country has to offer.
+        text: My name is <span class="highlight">Christian García Herreras</span> and I'm a <span class="highlight">web developer</span> from Valencia certified with a <span class="highlight">Technical Engineering in Computer Systems degree</span> (Ingeniería Técnica en Informática de Sistemas) by the Polytechnic University of Valencia (UPV). Currently, I live in <span class="highlight">Dublin</span> (Ireland), with the aim of living new experiences that allow me to grow personally and professionally. Also to improve my Engish skills while I can enjoy all the possibilities that this beautiful country has to offer.
     paper2:
         title: As a backend programmer...
-        text: I have worked individually as well as in a team developing several projects mainly in <span class="underlined">PHP</span>. Sometimes I have programmed only with PHP, using its power oriented to objects, while in other cases I made use of frameworks such as <span class="underlined">Symfony 2</span> o <span class="underlined">Wordpress</span> to create the website structure. Also, I have managed <span class="underlined">MySQL</span> databases in which save, get or modify information of any type and size.
+        text: I have worked individually as well as in a team developing several projects mainly in <span class="highlight">PHP</span>. Sometimes I have programmed only with PHP, using its power oriented to objects, while in other cases I made use of frameworks such as <span class="highlight">Symfony 2</span> o <span class="highlight">Wordpress</span> to create the website structure. Also, I have managed <span class="highlight">MySQL</span> databases in which save, get or modify information of any type and size.
     paper3:
         title: As a frontend developer...
-        text: I use and experiment with the new labels and properties that incorporate <span class="underlined">HTML5</span> and <span class="underlined">CSS3</span>, while I combine them with <span class="underlined">Javascript</span> to improve the user's experince. I like to test and reuse libraries such as <span class="underlined">JQuery</span> and its plugins, or frameworks like <span class="underlined">AngularJS</span> in order to increase the interactivity between the user and the website. Recently, I have begun to manage programs such as <span class="underlined">Photoshop</span> or <span class="underlined">Illustrator</span> to create my own designs.
+        text: I use and experiment with the new labels and properties that incorporate <span class="highlight">HTML5</span> and <span class="highlight">CSS3</span>, while I combine them with <span class="highlight">Javascript</span> to improve the user's experince. I like to test and reuse libraries such as <span class="highlight">JQuery</span> and its plugins, or frameworks like <span class="highlight">AngularJS</span> in order to increase the interactivity between the user and the website. Recently, I have begun to manage programs such as <span class="highlight">Photoshop</span> or <span class="highlight">Illustrator</span> to create my own designs.
     paper4:
         title: Personally...
-        text: I consider myself a <span class="underlined">sports</span> lover and I do a lot of sport as much as I can, especially football, basketball, tennis and jogging, but I also use my chill-out time to listen to <span class="underlined">music</span> and <span class="underlined">write</span>. As any good IT, I spend my free time in front of my computer reading articles from my favourite <span class="underlined">websites</span> and <span class="underlined">blogs</span>.
+        text: I consider myself a <span class="highlight">sports</span> lover and I do a lot of sport as much as I can, especially football, basketball, tennis and jogging, but I also use my chill-out time to listen to <span class="highlight">music</span> and <span class="highlight">write</span>. As any good IT, I spend my free time in front of my computer reading articles from my favourite <span class="highlight">websites</span> and <span class="highlight">blogs</span>.
 
 webmap:
     main: ChristianGH's sitemap

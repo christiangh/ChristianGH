@@ -80,65 +80,6 @@
 }
 /** PICTURE **/
 
-/** UNDERLINING ANIMATION **/
-span.quixote_underline{
-    padding: 0 2px;
-    margin: 0 -2px;
-}
-
-span.quixote_underlined{
-    -webkit-animation: quixote_underlining 3s  ease-in-out forwards;
-    -moz-animation: quixote_underlining 3s  ease-in-out forwards;
-    animation: quixote_underlining 3s  ease-in-out forwards;
-    
-    background: url("/images/underlined.jpg") no-repeat top left;
-    padding: 0 2px;
-    margin: 0 -2px;
-}
-
-@-webkit-keyframes quixote_underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-
-@-moz-keyframes quixote_underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-
-@keyframes quixote_underlining{
-    from{
-        background: url("/images/underlined.jpg") no-repeat -600px top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-    
-    to{
-        background: url("/images/underlined.jpg") no-repeat right top;
-        padding: 0 2px;
-        margin: 0 -2px;   
-    }
-}
-/** UNDERLINING ANIMATION **/
-
 /** PHONE **/
 @media screen and (max-width:600px){
     #main_picture{
