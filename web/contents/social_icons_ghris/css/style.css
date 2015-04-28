@@ -1,0 +1,68 @@
+#content_area *{
+    box-sizing: border-box;
+}
+
+#background{
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #ecf0f1;
+}
+
+#presentation{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+#info,
+#message{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+#message a{
+    color: #232323;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#social_listing{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+}
+
+#social_listing li{
+    position: relative;
+    float: left;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+#social_listing li img{
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 80px;
+    transition: top 1s;
+    cursor: pointer;
+}
+
+#social_listing li img:hover{
+    top: -40px;
+    transition: top 1s;
+}
