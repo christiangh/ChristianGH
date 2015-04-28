@@ -88,9 +88,16 @@ class Content
     /**
      * @var text
      *
-     * @ORM\Column(name="tags", type="text")
+     * @ORM\Column(name="tags_es", type="text")
      */
-    private $tags;
+    private $tagsEs;
+    
+    /**
+     * @var text
+     *
+     * @ORM\Column(name="tags_en", type="text")
+     */
+    private $tagsEn;
     
     /**
      * @var string
@@ -119,8 +126,37 @@ class Content
      * @ORM\Column(name="keywords_en", type="string", length=255)
      */
     private $keywordsEn;
-
-
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="download", type="string", length=255)
+     */
+    private $download;
+    
+    
+    /**
+     * @var ArrayCollection $packages
+     *      
+     * @ORM\ManyToMany(targetEntity="Package")
+     * @ORM\JoinTable(name="content_package",
+     *      joinColumns={@ORM\JoinColumn(name="content_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="package_id", referencedColumnName="id", unique=true)}
+     *      )
+     **/
+     
+    private $packages;
+    
+    
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->packages = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
+    
     /**
      * Get id
      *
@@ -321,7 +357,7 @@ class Content
      * @param string $keyName
      * @return Content
      */
-    public function setKey($keyName)
+    public function setKeyName($keyName)
     {
         $this->keyName = $keyName;
 
@@ -339,26 +375,49 @@ class Content
     }
     
     /**
-     * Set tags
+     * Set tagsEs
      *
-     * @param string $tags
+     * @param string $tagsEs
      * @return Content
      */
-    public function setTags($tags)
+    public function setTagsEs($tagsEs)
     {
-        $this->tags = $tags;
+        $this->tagsEs = $tagsEs;
 
         return $this;
     }
 
     /**
-     * Get tags
+     * Get tagsEs
      *
      * @return string 
      */
-    public function getTags()
+    public function getTagsEs()
     {
-        return $this->tags;
+        return $this->tagsEs;
+    }
+
+    /**
+     * Set tagsEn
+     *
+     * @param string $tagsEn
+     * @return Content
+     */
+    public function setTagsEn($tagsEn)
+    {
+        $this->tagsEn = $tagsEn;
+
+        return $this;
+    }
+
+    /**
+     * Get tagsEn
+     *
+     * @return string 
+     */
+    public function getTagsEn()
+    {
+        return $this->tagsEn;
     }
     
     /**
@@ -453,6 +512,39 @@ class Content
         return $this->keywordsEn;
     }
     
+    /**
+     * Set download
+     *
+     * @param string $download
+     * @return Content
+     */
+    public function setDownload($download)
+    {
+        $this->download = $download;
+
+        return $this;
+    }
+
+    /**
+     * Get download
+     *
+     * @return string 
+     */
+    public function getDownload()
+    {
+        return $this->download;
+    }
+
+    /**
+     * Get packages
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPackages()
+    {
+        return $this->packages;
+    }
+    
     /** FUNCTIONS **/
     public function getName($locale){
         $locale = strtolower($locale);
@@ -496,8 +588,18 @@ class Content
         return "";
     }
     
-    public function getTagsArray(){
-        return explode(";", $this->getTags());
+    public function getTagsArray($locale){
+        $locale = strtolower($locale);
+        
+        switch($locale){
+            case "es": return explode(";", $this->getTagsEs());
+                break;
+            
+            case "en": return explode(";", $this->getTagsEn());
+                break;
+        }
+        
+        return array();
     }
     
     public function getDescription($locale){
@@ -527,5 +629,17 @@ class Content
         
         return "";
     }
-    /** FUNCTIONS **/    
+    
+    public function getPackagesByType($typePackage){
+        $packages = array();
+        
+        foreach($this->getPackages() as $package){
+            if($package->getType() == $typePackage){
+                $packages[] = $package;
+            }
+        }
+        
+        return $packages;
+    }
+    /** FUNCTIONS **/
 }

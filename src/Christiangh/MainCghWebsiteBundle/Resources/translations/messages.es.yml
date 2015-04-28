@@ -97,7 +97,64 @@ content:
     listing:
         label: Listado de contenidos
         title: Ir al listado de contenidos
+    download:
+        message: Puedes descagar %contentName% haciendo click en la sigiente caja
+        label_in_cover: Descargar
+
+content_jquery_highlighter:
+    tab_menu:
+        demo: Demo
+        installation: Uso
+        documentation: Documentación
+        download: Descargar
+    installation:
+        presentation: La instalación de jQuery Highlighter se lleva a cabo en 3 rápidos pasos:
+        include_files:
+            title: Incluir jQuery Highlighter
+            explanation: Descarga y añade los archivos de jQuery Highlighter plugin en la estructura de tu proyecto.
+        link_files:
+            title: Enlazar los archivos CSS y JS
+            explanation: Enlaza los archivos del plugin en el documento desde el que quieres utilizar jQuery Highlighter. Primero debes incluir la hoja de estilos de jQuery Highlighter, <b>jquery.highlighter.css</b>, de la siguiente manera:
+            explanation2: Para que el plugin funcione correctamente deberás incluir alguna versión moderna de <b>jQuery</b> y por supuesto el archivo JS del plugin, <b>jquery.highlighter.min.js</b>.
+        add_code:
+            title: Llamar al plugin
+            explanation: Una vez añadidos los archivos del plugin a la estructura del proyecto y enlazados en el documento deseado, solo hay que invocar a jQuery Highlighter dejando su configuración por defecto o con atributos personalizados.
+    documentation:
+        presentation: Los atributos configurables de jQuery Highlighter son los siguientes:
+        table:
+            title:
+                attribute: Atributo
+                default_value: Valor por defecto
+                accepted_values: Valores acepados
+                description: Descripción
+            queue:
+                description: Si true se subrayan los elementos uno tras otro. Si false se subrayan todos los elementos a la vez
+            pause_time:
+                accepted_values: Tiempo (segundos o milisegundos)
+                description: Tiempo de espera para subrayar el siguiente elemento de la cola
+            duration:
+                accepted_values: Tiempo (segundos o milisegundos)
+                description: Tiempo de subrayado por elemento
+            timing:
+                accepted_values: ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n)|initial|inherit
+                description: Variación de la velocidad de la animación durante el subrayado
+            color_from:
+                accepted_values: Color (nombre, hexadecimal o rgb(0,0,0))| transparent
+                description: Color inicial del fondo del elemento
+            color_to:
+                accepted_values: Color (nombre, hexadecimal o rgb(0,0,0))| transparent
+                description: Color final del fondo del elemento
+    download:
+        message: Para descargar jQuery Highlighter haz click en <a href="#link_to_download">la caja</a> al final de esta página.
+
+content_social_icons_ghris:
+    presentation: Mi primera colección de iconos de redes sociales: <b>"Ghris"</b>.
+    icon: icono
+    info: Pon el puntero de tu raton sobre cada icono para ver el efecto "hover"
+    message: La colección "Ghris" es de uso libre. Si quieres descargarla y utilizarla totalmente gratis haz click sobre la <a href="#link_to_download">caja</a>, eso si, te agradecería un comentario en el <a href="http://www.christiangh.com/blog/iconos-de-redes-sociales-ghris/">artículo</a> de blog o que me enviaras un email. ¡Muchas gracias!
 
 error:
     404:
         message: ERROR 404 ES
+    incorrect_screen_size:
+        message: La página actual puede que no funcione correctamente con el tamaño de su pantalla

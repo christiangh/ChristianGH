@@ -97,7 +97,64 @@ content:
     listing:
         label: Content listing
         title: Go to content listing
+    download:
+        message: You can download %contentName% clicking on the next box
+        label_in_cover: Download
+
+content_jquery_highlighter:
+    tab_menu:
+        demo: Demo
+        installation: Usage
+        documentation: Documentation
+        download: Download
+    installation:
+        presentation: JQuery Highlighter setting up is carried out in 3 quick steps:
+        include_files:
+            title: Include jQuery Highlighter
+            explanation: Download and add the jQuery Highlighter plugin file in your project structure.
+        link_files:
+            title: Link the CSS and JS files
+            explanation: Link the plugin files in the document from which you are going to use jQuery Highlighter. Firstly, you have to include the stylesheet, <b>jquery.highlighter.css</b>:
+            explanation2: To make the plugin work, it is necessary to include some new <b>jQuery</b> version and the JS file of the plugin, <b>jquery.highlighter.min.js</b>.
+        add_code:
+            title: Call the plugin
+            explanation: Once added and linked correctly all the necessary files, it only remains to call the jQuery Highlighter plugin with the default or a customized configuration.
+    documentation:
+        presentation: The customizable attributes of jQuery Highlighter are:
+        table:
+            title:
+                attribute: Attribute
+                default_value: Default value
+                accepted_values: Accepted values
+                description: Description
+            queue:
+                description: If it is true, the elements will be highlighted one after the other. If it is false, all the elements will be highlighted at the same time
+            pause_time:
+                accepted_values: Time (seconds or milliseconds)
+                description: Waiting time between the highlighting of 2 elements
+            duration:
+                accepted_values: Time (seconds or milliseconds)
+                description: Highlighting time for each element
+            timing:
+                accepted_values: ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n)|initial|inherit
+                description: Speed from start to end in the highlighting
+            color_from:
+                accepted_values: Colour (color name, hexadecimal or rgb(0,0,0))| transparent
+                description: Background initial colour of the element
+            color_to:
+                accepted_values: Colour (color name, hexadecimal or rgb(0,0,0))| transparent
+                description: Background final colour of the element
+    download:
+        message: Click on <a href="#link_to_download">the box</a> in the end of the page in order to download it.
+
+content_social_icons_ghris:
+    presentation: My first social network icons collection: <b>"Ghris"</b>.
+    icon: icon
+    info: Put the pointer of your mouse over every icon to see the "hover" effect
+    message: The "Ghris" collection is for free use. If you want to download and use it completely free click on the <a href="#link_to_download">box</a>, but, I will be happier if you leave a comment on the <a href="http://www.christiangh.com/blog/iconos-de-redes-sociales-ghris/">post (Spanish)</a> or you send me an email. Thank you very much!
 
 error:
     404:
         message: ERROR 404 EN
+    incorrect_screen_size:
+        message: The current page may not work with your screen size

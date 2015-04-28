@@ -13,9 +13,7 @@ class ContentRepository extends EntityRepository
         $query = $em->createQueryBuilder()
                       ->select('content')
                       ->from('ChristianghMainCghWebsiteBundle:Content', 'content')
-                      ->addOrderBy('content.categoryId', 'ASC')
-                      ->addOrderBy('content.collectionId', 'ASC')
-                      ->addOrderBy('content.id', 'ASC')
+                      ->addOrderBy('content.id', 'DESC')
                 ;
         
         return $query->getQuery()->getResult();

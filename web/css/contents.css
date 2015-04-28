@@ -200,10 +200,15 @@
     box-sizing: border-box;
 }
 
+#content_list li:nth-child(2n+1){
+    background-color: #F2F2F2;
+}
+
 #content_list li.row_title{
-    background-color: #D8D8D8;
+    background-color: #A4A4A4;
     font-family: arial;
     font-weight: bold;
+    color: #FFFFFF;
     border-bottom: 2px solid #000000;
 }
 
@@ -333,18 +338,21 @@
         width: 100%;
         text-align: center;
     }
-    
-    #content_list li .row_1{
+  
+    #contents_area #content_list li div{
         width: 100%;
+        text-align: center;
         border-right: none;
     }
-    
-    #content_list li .row_2{
+  
+    #content_list .row_title .row_2,
+    #content_list .row_title .row_3{
         display: none;
     }
-    
+  
+    #content_list li .row_2,
     #content_list li .row_3{
-        display: none;
+        color: #A4A4A4;
     }
 }
 /** PHONE **/

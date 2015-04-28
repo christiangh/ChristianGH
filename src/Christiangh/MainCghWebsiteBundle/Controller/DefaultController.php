@@ -8,6 +8,7 @@ use Christiangh\MainCghWebsiteBundle\Entity\Email;
 use Christiangh\MainCghWebsiteBundle\Entity\Content;
 use Christiangh\MainCghWebsiteBundle\Entity\CategoryContent;
 use Christiangh\MainCghWebsiteBundle\Entity\CollectionContent;
+use Christiangh\MainCghWebsiteBundle\Entity\Package;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -102,6 +103,12 @@ class DefaultController extends Controller
     
     public function contentAction(Request $request)
     {
+        /** REDIRECTS **/
+        if($request->get('content') == "aplicaciones-mi-escritorio/resumiendo-el-quijote.html" || $request->get('content') == "applications-my-desk/summarizing-the-quixote.html"){
+            return $this->redirect($this->generateUrl('christiangh_main_cgh_website_content', array("content"=>$this->get('translator')->trans('jquery-highlighter', array(), 'christiangh_main_cgh_website_content_content')) ), 301);
+        }
+        /** REDIRECTS **/
+        
         //Open connection
         $em = $this->getDoctrine()->getManager();
         
@@ -116,7 +123,6 @@ class DefaultController extends Controller
         }
         
         $final_content_url = $content->getCategory()->getUrl($request->get('_locale'))."-".$content->getCollection()->getUrl($request->get('_locale'))."/".$content->getUrl($request->get('_locale'));
-        
         if($final_content_url != $request->get('content')){
             //Incorrect content's name or incorrect url
             throw new NotFoundHttpException("Page not found");
@@ -133,26 +139,10 @@ class DefaultController extends Controller
             //Open connection
             $em = $this->getDoctrine()->getManager();
             
-            $static_urls = array();
-            switch($request->get('_locale')){
-                case "es": $static_urls[] = "http://www.christiangh.com/";
-                           $static_urls[] = "http://www.christiangh.com/es/mi-curriculum-vitae.html";
-                           $static_urls[] = "http://www.christiangh.com/es/portfolio.html";
-                           $static_urls[] = "http://www.christiangh.com/es/contenidos.html";
-                           $static_urls[] = "http://www.christiangh.com/es/contacto.html";
-                    break;
-                
-                case "en": $static_urls[] = "http://www.christiangh.com/en/";
-                           $static_urls[] = "http://www.christiangh.com/en/my-curriculum-vitae.html";
-                           $static_urls[] = "http://www.christiangh.com/en/portfolio.html";
-                           $static_urls[] = "http://www.christiangh.com/en/contents.html";
-                           $static_urls[] = "http://www.christiangh.com/en/contact.html";
-                    break;
-            }
-            
+            $main_urls = $em->getRepository('ChristianghMainCghWebsiteBundle:IndexPage')->getAllUrls( "http://www.christiangh.com", $request->get('_locale') );
             $content_urls = $em->getRepository('ChristianghMainCghWebsiteBundle:Content')->getAllUrls( "http://www.christiangh.com", $request->get('_locale') );
             
-            $urls = array_merge($static_urls, $content_urls);
+            $urls = array_merge($main_urls, $content_urls);
             
             return $this->render('ChristianghMainCghWebsiteBundle:Default:webMap.xml.twig', array('urls' => $urls));
         }
