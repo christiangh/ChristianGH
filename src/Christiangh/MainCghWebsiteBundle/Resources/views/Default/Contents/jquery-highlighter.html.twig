@@ -1,0 +1,103 @@
+<ul id="tab_menu">
+    <li id="title_jquery_highlighter">JQuery Highlighter</li>
+    <li id="tab_demo" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.demo'|trans }}</li>
+    <li id="tab_installation" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.installation'|trans }}</li>
+    <li id="tab_documentation" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.documentation'|trans }}</li>
+    <li id="tab_download" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.download'|trans }}</li>
+</ul>
+
+<div id="tab_demo_content" class="tab_content">
+    <div class="quixote_foil">
+        <div id="main_picture" class="photo">
+            <img src="{{ asset('images/clip.png') }}" class="clip_picture" />
+            <div class="image_content">
+                <img src="{{ asset('contents/'~content.getKeyName()~'/images/don-quijote.jpg') }}" class="photo_image" />
+            </div>
+        </div>
+        <div class="text_in_foil">
+            <div id="my_photo_area"></div>
+            <h2 id="quixote_title"><span>Don Quijote de la Mancha</span></h2>
+            <p id="first_block">En un lugar de <span>la Mancha</span>, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía <span>un hidalgo</span> de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. <span>Frisaba la edad de</span> nuestro hidalgo con los <span>cincuenta años</span>; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de <span>Quijada, o Quesada,</span> que en esto hay alguna diferencia en los autores que deste caso escriben; aunque, por conjeturas verosímiles, se deja entender que se llamaba Quejana. Pero esto importa poco a nuestro cuento; basta que en la narración dél no se salga un punto de la verdad.</p>
+        </div>
+    </div>
+    
+    <div class="quixote_foil">
+        <div class="text_in_foil">
+            <p id="second_block">Es, pues, de saber que <span>este sobredicho hidalgo</span>, los ratos que estaba ocioso, que eran los más del año, se daba a leer <span>libros de caballerías</span>, con tanta afición y gusto, que olvidó casi de todo punto el ejercicio de la caza, y aun la administración de su hacienda. Y llegó a tanto su curiosidad y desatino en esto, que vendió muchas hanegas de tierra de sembradura para comprar libros de caballerías en que leer, y así, llevó a su casa todos cuantos pudo haber dellos; y de todos, ningunos le parecían tan bien como los que compuso el famoso <span>Feliciano de Silva</span>, porque la claridad de su prosa y aquellas entricadas razones suyas le parecían de perlas, y más cuando llegaba a leer aquellos requiebros y cartas de desafíos, donde en muchas partes hallaba escrito: <span>La razón de la sinrazón</span> que a mi razón se hace, de tal manera mi razón enflaquece, que con razón me quejo de la vuestra fermosura. Y también cuando leía: los altos cielos que ...</p>
+        </div>
+    </div>
+</div>
+
+<div id="tab_installation_content" class="tab_content">
+    <div class="installation_step">
+        <p>{{ 'content_jquery_highlighter.installation.presentation'|trans }}</p>
+    </div>
+    <div class="installation_step">
+        <label>1. {{ 'content_jquery_highlighter.installation.include_files.title'|trans }}</label>
+        <p>{{ 'content_jquery_highlighter.installation.include_files.explanation'|trans }}</p>
+    </div>
+    <div class="installation_step">
+        <label>2. {{ 'content_jquery_highlighter.installation.link_files.title'|trans }}</label>
+        <p>{{ 'content_jquery_highlighter.installation.link_files.explanation'|trans|raw }}</p>
+        <pre><code>&lt;link rel="stylesheet" href="/jquery-highlighter/css/jquery.highlighter.css" /&gt;</code></pre>
+        <p>{{ 'content_jquery_highlighter.installation.link_files.explanation2'|trans|raw }}</p>
+        <pre><code>&lt;script src="/jquery/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;<br />&lt;script src="/jquery-highlighter/jquery.highlighter.min.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+    </div>
+    <div class="installation_step">
+        <label>3. {{ 'content_jquery_highlighter.installation.add_code.title'|trans }}</label>
+        <p>{{ 'content_jquery_highlighter.installation.add_code.explanation'|trans }}</p>
+        <pre><code>&lt;script type="text/javascript"&gt;<br />   $(".highlight").highlighter();<br />&lt;/script&gt;</code></pre>
+    </div>
+</div>
+
+<div id="tab_documentation_content" class="tab_content">
+    <p>{{ 'content_jquery_highlighter.documentation.presentation'|trans }}<p>
+    <ul id="attribute_table">
+        <li class="row_title">
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.attribute'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.default_value'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.accepted_values'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.description'|trans }}</div>
+        </li>
+        <li>
+            <div>queue</div>
+            <div>true</div>
+            <div>true|false</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.queue.description'|trans }}</div>
+        </li>
+        <li>
+            <div>pauseTime</div>
+            <div>2000</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.pause_time.accepted_values'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.pause_time.description'|trans }}</div>
+        </li>
+        <li>
+            <div>duration</div>
+            <div>3000</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.duration.accepted_values'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.duration.description'|trans }}</div>
+        </li>
+        <li>
+            <div>timing</div>
+            <div>'ease-in-out'</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.timing.accepted_values'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.timing.description'|trans }}</div>
+        </li>
+        <li>
+            <div>colorFrom</div>
+            <div>'transparent'</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_from.accepted_values'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_from.description'|trans }}</div>
+        </li>
+        <li>
+            <div>colorTo</div>
+            <div>'#FFFF00'</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_to.accepted_values'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_to.description'|trans }}</div>
+        </li>
+    </ul>
+</div>
+
+<div id="tab_download_content" class="tab_content">
+    {{ 'content_jquery_highlighter.download.message'|trans|raw }}
+</div>

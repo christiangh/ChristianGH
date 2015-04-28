@@ -30,7 +30,7 @@ $(this).each(function(index, element){
                 'duration': 10000,
                 'timing': 'linear',
                 'colorFrom': 'transparent',
-                'colorTo': '#40FF00'
+                'colorTo': '#FF9B00'
             });
         }, 17000);
     }

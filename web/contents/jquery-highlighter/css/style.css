@@ -1,0 +1,316 @@
+#content_area *{
+    box-sizing: border-box;
+}
+
+#tab_menu{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 10px;
+    background-color: #FFFFC8;
+    border-bottom: 2px solid #6E6E6E;
+}
+
+#tab_menu #title_jquery_highlighter{
+    position: relative;
+    float: right;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+}
+
+#tab_menu .tab_to_select{
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10px 14px;
+    border-left: 1px solid #6E6E6E;
+    border-right: 1px solid #6E6E6E;
+    list-style: none;
+    cursor: pointer;
+}
+
+#tab_menu .tab_to_select:hover{
+    background-color: #FFDCB4;
+}
+
+#tab_menu .tab_to_select.selected{
+    background-color: #FF9B00;
+    color: #FFFFFF;
+}
+
+#tab_menu li:nth-child(2){
+    border-left: 2px solid #6E6E6E;
+}
+
+#tab_menu li:last-child{
+    border-right: 2px solid #6E6E6E;
+}
+
+.tab_content{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    background-color: #CEF6CE;
+    padding: 10px;
+    height: auto;
+    min-height: 100vh;
+}
+
+#tab_demo_content{
+    font-family: MV Boli,sans-serif;
+}
+
+.quixote_foil{
+    position: relative;
+    margin: 10px auto 10px;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    min-height: 655px;
+    background: url("https://dl.dropboxusercontent.com/u/40824902/STQ/cuadricula_vertical.png") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 5px -1px;
+}
+
+.quixote_title{
+    width: auto;
+    text-decoration: underline;
+}
+
+.quixote_subtitle{
+    font-size: 16px;
+    width: auto;
+    text-decoration: underline;
+}
+
+.text_in_foil{
+    position: relative;
+    width: 100%;
+    padding: 10px 15px 10px 60px;
+}
+
+/** PICTURE **/
+#main_picture{
+    position: absolute;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px -1px #000000;
+    top: 5px;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    padding: 20px 20px 50px 20px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+.image_content{
+    width: 150px;
+    height: 150px;
+    background-color: #BDBDBD;
+    padding: 5px;
+}
+
+.photo_image{
+    width: 100px;
+    border: 6px solid #854311;
+}
+
+.clip_picture{
+    right: 160px;
+    position: absolute;
+    top: -8px;
+    width: 20px;
+}
+
+#my_photo_area{
+    position: relative;
+    float: right;
+    width: 190px;
+    height: 220px;
+}
+/** PICTURE **/
+
+#tab_installation_content .installation_step{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 15px 0 30px;
+}
+
+#tab_installation_content .installation_step label{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#tab_installation_content .installation_step p,
+#tab_documentation_content p{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+#tab_installation_content .installation_step pre{
+    position: relative;
+    float: left;
+    width: 98%;
+    margin: 10px 1%;
+    padding: 5px;
+    background-color: #FFDCB4;
+    border: 1px solid #000000;
+    overflow-x: scroll;
+}
+
+#tab_documentation_content label::before{
+    position: relative;
+    float: left;
+    content: "- ";
+}
+
+#tab_documentation_content #attribute_table{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#tab_documentation_content #attribute_table li{
+    display: table-row;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#tab_documentation_content #attribute_table li:nth-child(2n){
+    background-color: #FFFFFF;
+}
+
+#tab_documentation_content #attribute_table li:nth-child(2n+1){
+    background-color: #FFDCB4;
+}
+
+#tab_documentation_content #attribute_table li.row_title{
+    font-weight: bold;
+}
+
+#tab_documentation_content #attribute_table li div{
+    display: table-cell;
+    width: 25%;
+    height: 100%;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+#tab_download_content a{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #232323;
+}
+
+/** TABLET & PHONE **/
+@media screen and (max-width:768px){
+    /** MENU **/
+    #tab_menu{
+        padding: 0;
+        border: none;
+    }
+    
+    #tab_menu #title_jquery_highlighter{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+    
+    #tab_menu .tab_to_select{
+        width: 100%;
+        text-align: center;
+        border-left: none!important;
+        border-right: none!important;
+        border-top: 1px solid #6E6E6E;
+        border-bottom: 1px solid #6E6E6E;
+    }
+    
+    #tab_menu li:nth-child(2){
+        border-top: 2px solid #6E6E6E;
+    }
+    
+    #tab_menu li:last-child{
+        border-bottom: 2px solid #6E6E6E;
+    }
+    /** MENU **/
+    
+    /** DEMO **/
+    #main_picture{
+        height: 160px;
+        width: 140px;
+        right: 10px;
+    }
+    
+    .image_content{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .photo_image{
+        width: 60px;
+        border: 4px solid #854311;
+    }
+    
+    .clip_picture{
+        width: 15px;
+        right: 112px;
+        top: -6px;
+    }
+    
+    #my_photo_area{
+        height: 180px;
+    }
+    /** DEMO **/
+    
+    /** TABLA **/
+    #tab_documentation_content #attribute_table li{
+        position: relative;
+        float: left;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    #tab_documentation_content #attribute_table li div{
+        position: relative;
+        float: left;
+        width: 100%;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    #tab_documentation_content #attribute_table li div:not(:first-child){
+        color: #A4A4A4;
+    }
+    
+    #tab_documentation_content #attribute_table li.row_title div:not(:first-child){
+        display: none;
+    }
+    /** TABLA */
+}
+/** TABLET & PHONE **/
