@@ -23,11 +23,7 @@
     {% endblock %}
     
     {% block modernizr %}
-        {% stylesheets
-            'js/modernizr/*'
-            output='js/compiled/modernizr.js' %}
-            <script src="{{ asset_url }}"></script>
-        {% endstylesheets %}
+        <script src="{{ asset('js/modernizr/modernizr.js') }}"></script>
     {% endblock %}
     
 		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
