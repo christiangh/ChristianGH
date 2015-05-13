@@ -1,0 +1,18 @@
+<ul id="trip-listing" ng-hide="trips.length <= 0" ng-class="listingClass">
+    <li ng-repeat="trip in trips">
+        <label>{[{ trip.destination.name }]}</label>
+        <div class="description">
+            <img ng-src="{[{ trip.img }]}" />
+            <div>
+                <div class="nights">{[{ trip.nights }]}
+                    <ng-pluralize count="trip.nights" when="{'1': '{[{ &quot;search.night&quot; | translate }]}', 'other': '{[{ &quot;search.nights&quot; | translate }]}'}"></ng-pluralize>
+                </div>
+                <div class="regime">{[{ trip.regime.name }]}</div>
+            </div>
+        </div>
+        <div class="book">
+            <div class="price">{[{ trip.price | myCurrency:"€":0:".":"," }]}</div>
+            <a href="" title="{[{ 'trips.title' | translate }]} {[{ trip.destination.name }]} {[{ 'trips.now' | translate }]}">{[{ 'trips.book' | translate }]}</a>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,37 @@
+<div id="searcher">
+    <div id="searcher-form-content" ng-class="{'showing':showingSearcher}"">
+        <p id="searcher-title">{[{ 'search.titleSearcher' | translate }]}</p>
+        <form id="searcher-form" name="searcherForm">
+            <div>
+                <label for="from-city">{[{ 'search.from' | translate }]}</label>
+                <select id="from-city" ng-model="search.from" ng-options="from as from.name for from in fromCities" title="From" ng-change="search.page=1; getTrips()">
+                </select>
+            </div>
+            <div>
+                <label for="to-city">{[{ 'search.destination' | translate }]}</label>
+                <select id="to-city" ng-model="search.destination" ng-options="destination as destination.name for destination in destinations" title="Destinations" ng-change="search.page=1; getTrips()">
+                </select>
+            </div>
+            <div>
+                <label for="nights">{[{ 'search.nights' | translate }]}</label>
+                <select id="nights" ng-model="search.nights" ng-options="nights as nights.name for nights in nights" title="Nights" ng-change="search.page=1; getTrips()">
+                </select>
+            </div>
+            <div>
+                <label for="regime">{[{ 'search.regime' | translate }]}</label>
+                <select id="regime" ng-model="search.regime" ng-options="regime as regime.name for regime in regimes" title="Regime" ng-change="search.page=1; getTrips()">
+                </select>
+            </div>
+            <div>
+                <label for="price">{[{ 'search.price' | translate }]}</label>
+                <select id="price" ng-model="search.price" ng-options="price as price.name for price in prices" title="Price" ng-change="search.page=1; getTrips()">
+                </select>
+            </div>
+        </form>
+    </div>
+    <div id="searcher-shower" ng-click="toggleSearcher()">
+        <div class="arrow" ng-class="{'showing':showingSearcher}"></div>
+        <div class="current-search">{[{ 'search.current' | translate }]}: {[{ 'search.from' | translate }]} {[{ search.from.name }]}<span ng-show="search.destination.id != 0"> {[{ 'search.to' | translate }]} {[{ search.destination.name }]}</span>. <span ng-show="search.nights.id != 0">{[{ search.nights.name }]} <ng-pluralize count="search.nights.id" when="{'1': '{[{ &quot;search.night&quot; | translate }]}', 'other': '{[{ &quot;search.nights&quot; | translate }]}'}"></ng-pluralize></span><span ng-show="search.nights.id != 0 && search.regime.id != 0"> {[{ 'search.with' | translate }]} </span><span ng-show="search.regime.id != 0">{[{ search.regime.name }]}</span></span><span ng-show="search.nights.id != 0 || search.regime.id != 0">.</span><span ng-show="search.price.id != 0"> {[{ 'search.price' | translate }]}: {[{ search.price.name }]}</span></div>
+        <div class="trip-results">{[{ 'search.results' | translate }]}: {[{ tripResults }]}</div>
+    </div>
+</div>

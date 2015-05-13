@@ -1,0 +1,11 @@
+content_travel_agency:
+    title: Agencia de viajes
+    menu:
+        flights: Vuelos
+        hotels: Hoteles
+        trips: Viajes organizados
+    pagination:
+        previous: Viajes anteriores
+        next: Más viajes
+    footer:
+        text: Demo de listado de ofertas de viajes oganizados

@@ -1,0 +1,716 @@
+#content_area *{
+    box-sizing: border-box;
+}
+
+/** HEADER **/
+#travel-agency-menu{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: #436EEE;
+    border-bottom: 1px solid #6E9BB9;
+    padding: 0 20px;
+}
+
+#travel-agency-menu p{
+    position: relative;
+    float: left;
+    width: auto;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 6px 0 0;
+}
+
+#travel-agency-menu #menu-listing{
+    position: relative;
+    float: right;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#travel-agency-menu #menu-listing li{
+    position: relative;
+    float: left;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 14px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-left: 1px solid #6E9BB9;
+    border-right: 1px solid #6E9BB9;
+    cursor: pointer;
+}
+
+#travel-agency-menu #menu-listing li:first-child{
+    border-right: none;
+}
+
+#travel-agency-menu #menu-listing li:last-child{
+    border-left: none;
+    background-color: #688BF1;
+}
+
+#travel-agency-menu #menu-listing li:hover{
+    background-color: #688BF1;
+}
+/** HEADER **/
+
+/** BODY **/
+#travel-agency-body{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 32px;
+    background-color: #FFFFFF;
+}
+
+#travel-agency-body #searcher{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+#travel-agency-body #searcher #searcher-form-content{
+    display: block!important;
+    width: 100%;
+    max-height: 32px;
+    overflow: hidden;
+    -webkit-transition: max-height 2s;
+    -moz-transition: max-height 2s;
+    transition: max-height 2s;
+}
+
+#travel-agency-body #searcher #searcher-form-content.showing{
+    display: block!important;
+    max-height: 132px;
+}
+
+#travel-agency-body #searcher #searcher-form-content #searcher-title{
+    position: relative;
+    float: left;
+    width: 100%;
+    border-bottom:  1px solid #6E9BB9;
+    height: 32px;
+    color: #FFFFFF;
+    background-color: #436EEE;
+    margin: 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#travel-agency-body #searcher #searcher-form{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    margin: 0;
+    padding: 10px;
+    color: #000000;
+    background-color: #ECF0FD;
+    border: 1px solid #6E9BB9;
+    border-bottom: none;
+}
+
+#travel-agency-body #searcher #searcher-form div{
+    position: relative;
+    float: left;
+    width: 18%;
+    height: auto;
+    margin: 10px 1%;
+    padding: 0;
+}
+
+#travel-agency-body #searcher #searcher-form div label{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#travel-agency-body #searcher #searcher-form div select{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px 1px;
+    font-size: 16px;
+    border: 1px solid #A4A4A4;
+    overflow: hidden;
+}
+
+#travel-agency-body #searcher #searcher-shower{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    background-color: #436EEE;
+    border: 1px solid #6E9BB9;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#travel-agency-body #searcher #searcher-shower .arrow{
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+    padding: 5px;
+    background-color: #436EEE;
+    border: 1px solid #6E9BB9;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    transition: transform 2s;
+}
+
+#travel-agency-body #searcher #searcher-shower .arrow::before,
+#travel-agency-body #searcher #searcher-shower .arrow::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    box-sizing: border-box;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    transition: transform 2s;
+}
+
+#travel-agency-body #searcher #searcher-shower .arrow.showing{
+    transform-origin: 15px 15px;
+    transform: rotate(180deg);
+}
+
+#travel-agency-body #searcher #searcher-shower .arrow::before{
+    top: 10px;
+    left: 0;
+    border-top-color: #FFFFFF;
+    border-width: 14px;
+}
+
+#travel-agency-body #searcher #searcher-shower .arrow::after{
+    top: 5px;
+    left: 0;
+    border-top-color: #436EEE;
+    border-width: 14px;
+}
+
+#travel-agency-body #searcher #searcher-shower:hover,
+#travel-agency-body #searcher #searcher-shower:hover .arrow,
+#travel-agency-body #searcher #searcher-shower:hover .arrow::before{
+    background-color: #688BF1;
+}
+
+#travel-agency-body #searcher #searcher-shower:hover .arrow::after{
+    border-top-color: #688BF1;
+}
+
+#travel-agency-body #searcher #searcher-shower .current-search{
+    position: relative;
+    float: left;
+    width: auto;
+    max-width: calc(100% - 50px);
+    margin: 8px 0 0 0;
+}
+
+#travel-agency-body #searcher #searcher-shower .trip-results{
+    position: relative;
+    float: right;
+    width: auto;
+    margin: 8px 10px 0;
+    text-align: right;
+}
+
+#travel-agency-body #body-listing{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 528px;
+    margin: 0;
+    padding: 0;
+}
+
+#travel-agency-body #trip-listing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+#travel-agency-body #trip-listing.ng-hide{
+    display: inline-block!important;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+#travel-agency-body #trip-listing.out_left{
+    -ms-transform: translate(-120%,0); /* IE 9 */
+    -webkit-transform: translate(-120%,0); /* Safari */
+    transform: translate(-120%,0);
+    transition: all 500ms;
+}
+
+#travel-agency-body #trip-listing.in_right{
+    -ms-transform: translate(120%,0); /* IE 9 */
+    -webkit-transform: translate(120%,0); /* Safari */
+    transform: translate(120%,0);
+    transition: none;
+}
+
+#travel-agency-body #trip-listing.out_right{
+    -ms-transform: translate(120%,0); /* IE 9 */
+    -webkit-transform: translate(120%,0); /* Safari */
+    transform: translate(120%,0);
+    transition: all 500ms;
+}
+
+#travel-agency-body #trip-listing.in_left{
+    -ms-transform: translate(-120%,0); /* IE 9 */
+    -webkit-transform: translate(-120%,0); /* Safari */
+    transform: translate(-120%,0);
+    transition: none;
+}
+
+#travel-agency-body #trip-listing li{
+    flex: 1 1 310px;
+    width: 310px;
+    max-width: 310px;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+    border: 1px solid #B8860B;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+#travel-agency-body #trip-listing li label{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 30px;
+    background-color: #FFA500;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 5px;
+}
+
+#travel-agency-body #trip-listing li .description{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #B8860B;
+    border-bottom: 1px solid #B8860B;
+}
+
+#travel-agency-body #trip-listing li .description > div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(transparent 0, #000000 150%);
+}
+
+#travel-agency-body #trip-listing li .description div div{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: auto;
+    color: #FFFFFF;
+    padding: 5px;
+    
+}
+
+#travel-agency-body #trip-listing li .description div .regime{
+    text-align: right;
+}
+
+#travel-agency-body #trip-listing li .description img{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: inherit;
+}
+
+#travel-agency-body #trip-listing li .book{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #FFFDD0;
+    color: #436EEE;
+    padding: 10px;
+}
+
+#travel-agency-body #trip-listing li .book .price{
+    position: relative;
+    float: left;
+    width: auto;
+    max-width: 200px;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+#travel-agency-body #trip-listing li .book a{
+    position: relative;
+    float: right;
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #FFA500;
+    border: 1px solid #B8860B;
+    border-radius: 10%;
+    overflow: hidden;
+    padding: 3px 7px;
+    text-decoration: none;
+}
+
+#travel-agency-body #trip-listing li .book a:hover{
+    background-color: #FFB732;
+}
+
+#travel-agency-body #pagination{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+#travel-agency-body #pagination a{
+    position: relative;
+    width: auto;
+    height: 36px;
+    margin: 0;
+    padding: 5px 7px;
+    background-color: #436EEE;
+    color: #FFFFFF;
+    border: 1px solid #6E9BB9;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#travel-agency-body #pagination .previous-trips{
+    float: left;
+    border-left: none;
+    margin-left: 20px;
+}
+
+#travel-agency-body #pagination .previous-trips::before,
+#travel-agency-body #pagination .previous-trips::after,
+#travel-agency-body #pagination .next-trips::before,
+#travel-agency-body #pagination .next-trips::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    box-sizing: border-box;
+}
+
+#travel-agency-body #pagination .previous-trips::before{
+    top: -1px;
+    left: -36px;
+    border-right-color: #6E9BB9;
+    border-width: 18px;
+}
+
+#travel-agency-body #pagination .previous-trips::after{
+    top: 0px;
+    left: -34px;
+    border-right-color: #436EEE;
+    border-width: 17px;
+}
+
+#travel-agency-body #pagination .next-trips{
+    float: right;
+    border-right: none;
+    margin-right: 20px;
+}
+
+#travel-agency-body #pagination .next-trips::before{
+    top: -1px;
+    right: -36px;
+    border-left-color: #6E9BB9;
+    border-width: 18px;
+}
+
+#travel-agency-body #pagination .next-trips::after{
+    top: 0px;
+    right: -34px;
+    border-left-color: #436EEE;
+    border-width: 17px;
+}
+
+#travel-agency-body #pagination .previous-trips.disabled,
+#travel-agency-body #pagination .next-trips.disabled{
+    background-color: #6E9BB9;
+    color: #D8D8D8;
+    cursor: inherit;
+}
+
+#travel-agency-body #pagination .previous-trips.disabled::after{
+    border-right-color: #6E9BB9;
+}
+
+#travel-agency-body #pagination .next-trips.disabled::after{
+    border-left-color: #6E9BB9;
+}
+
+#travel-agency-body #pagination a:hover{
+    background-color: #688BF1;
+}
+
+#travel-agency-body #pagination .previous-trips:hover:not(.disabled):after{
+    border-right-color: #688BF1;
+}
+
+#travel-agency-body #pagination .next-trips:hover:not(.disabled):after{
+    border-left-color: #688BF1;
+}
+/** BODY **/
+
+/** FOOTER **/
+#travel-agency-footer{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: #436EEE;
+    border-top: 1px solid #6E9BB9;
+    padding: 10px;
+}
+
+#travel-agency-footer p{
+    position: relative;
+    float: left;
+    width: auto;
+    color: #FFFFFF;
+    margin: 0;
+}
+/** FOOTER **/
+
+
+
+
+
+
+/** DESKTOP **/
+@media screen and (min-width:769px){
+    /** BODY **/
+    #travel-agency-body .mobile-pagination{
+        display: none;
+    }
+    /** BODY **/
+}
+/** DESKTOP **/
+
+
+
+
+
+
+
+/** TABLET **/
+@media screen and (min-width:601px) and (max-width:768px){
+    /** HEADER **/
+    #travel-agency-menu{
+        height: auto;
+        padding: 10px 0 0;
+    }
+
+    #travel-agency-menu p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #travel-agency-menu #menu-listing{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    #travel-agency-menu #menu-listing li{
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #6E9BB9;
+        border-bottom: 1px solid #6E9BB9;
+    }
+
+    #travel-agency-menu #menu-listing li:first-child{
+        border-bottom: none;
+    }
+
+    #travel-agency-menu #menu-listing li:last-child{
+        border-top: none;
+    }
+    /** HEADER **/
+
+    /** BODY **/
+    #travel-agency-body{
+        padding: 10px;
+    }
+
+    #travel-agency-body #searcher #searcher-form div{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #travel-agency-body #searcher #searcher-form-content.showing{
+        max-height: 452px;
+    }
+
+    #travel-agency-body #searcher #searcher-shower .current-search{
+        display: none;
+    }
+
+    #travel-agency-body #body-listing{
+        min-height: auto;
+    }
+
+    #travel-agency-body #pagination .normal-pagination{
+        display: none!important;
+    }
+    /** BODY **/
+
+    /** FOOTER **/
+    /** FOOTER **/
+}
+/** TABLET **/
+
+
+
+
+
+
+
+/** PHONE **/
+@media screen and (max-width:600px){
+    /** HEADER **/
+    #travel-agency-menu{
+        height: auto;
+        padding: 10px 0 0;
+    }
+
+    #travel-agency-menu p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #travel-agency-menu #menu-listing{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    #travel-agency-menu #menu-listing li{
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #6E9BB9;
+        border-bottom: 1px solid #6E9BB9;
+    }
+
+    #travel-agency-menu #menu-listing li:first-child{
+        border-bottom: none;
+    }
+
+    #travel-agency-menu #menu-listing li:last-child{
+        border-top: none;
+    }
+    /** HEADER **/
+
+    /** BODY **/
+    #travel-agency-body{
+        padding: 10px;
+    }
+
+    #travel-agency-body #searcher #searcher-form div{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #travel-agency-body #searcher #searcher-form-content.showing{
+        max-height: 452px;
+    }
+
+    #travel-agency-body #searcher #searcher-shower .current-search{
+        display: none;
+    }
+
+    #travel-agency-body #body-listing{
+        min-height: auto;
+    }
+
+    #travel-agency-body #trip-listing li{
+        margin: 10px 0;
+    }
+
+    #travel-agency-body #pagination{
+        text-align: center;
+    }
+
+    #travel-agency-body #pagination .previous-trips{
+        width: 90%;
+        width: calc(100% - 20px);
+        margin: 0 0 0 20px;
+    }
+
+    #travel-agency-body #pagination .next-trips{
+        width: 90%;
+        width: calc(100% - 20px);
+        margin: 20px 20px 0 0;
+    }
+
+    #travel-agency-body #pagination .normal-pagination{
+        display: none!important;
+    }
+    /** BODY **/
+
+    /** FOOTER **/
+    /** FOOTER **/
+}
+/** PHONE **/

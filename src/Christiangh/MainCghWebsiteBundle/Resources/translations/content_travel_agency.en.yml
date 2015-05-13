@@ -1,0 +1,11 @@
+content_travel_agency:
+    title: Travel agency
+    menu:
+        flights: Flights
+        hotels: Hotels
+        trips: Organized trips
+    pagination:
+        previous: Previous trips
+        next: More trips
+    footer:
+        text: Demo of organized trip listing
