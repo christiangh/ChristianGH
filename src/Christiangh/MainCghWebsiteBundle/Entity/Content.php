@@ -136,24 +136,11 @@ class Content
     
     
     /**
-     * @var ArrayCollection $packages
-     *      
-     * @ORM\ManyToMany(targetEntity="Package")
-     * @ORM\JoinTable(name="content_package",
-     *      joinColumns={@ORM\JoinColumn(name="content_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="package_id", referencedColumnName="id", unique=true)}
-     *      )
-     **/
-     
-    private $packages;
-    
-    
-    /**
      * Constructor
      */
     public function __construct()
     {
-        $this->packages = new \Doctrine\Common\Collections\ArrayCollection();
+    
     }
     
     
@@ -534,16 +521,6 @@ class Content
     {
         return $this->download;
     }
-
-    /**
-     * Get packages
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getPackages()
-    {
-        return $this->packages;
-    }
     
     /** FUNCTIONS **/
     public function getName($locale){
@@ -628,18 +605,6 @@ class Content
         }
         
         return "";
-    }
-    
-    public function getPackagesByType($typePackage){
-        $packages = array();
-        
-        foreach($this->getPackages() as $package){
-            if($package->getType() == $typePackage){
-                $packages[] = $package;
-            }
-        }
-        
-        return $packages;
     }
     /** FUNCTIONS **/
 }

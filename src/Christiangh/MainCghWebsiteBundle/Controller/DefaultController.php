@@ -128,7 +128,7 @@ class DefaultController extends Controller
             throw new NotFoundHttpException("Page not found");
         }
         
-        return $this->render('ChristianghMainCghWebsiteBundle:Default:content.html.twig', array('current_section_class' => 'contents_color', 'content' => $content));
+        return $this->render('ChristianghMainCghWebsiteBundle:Default:Contents/'.$content->getKeyName().'.html.twig', array('current_section_class' => 'contents_color', 'content' => $content));
     }
     
     public function webMapAction(Request $request)

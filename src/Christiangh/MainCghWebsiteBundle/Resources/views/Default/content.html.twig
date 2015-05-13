@@ -10,11 +10,7 @@
 {% block css %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('js/jquery-highlighter-1.0/css/jquery.highlighter.css') }}" />
-    {% for package in content.getPackagesByType("css") %}
-    <link rel="stylesheet" href="{{ asset( package.getUrl() ) }}" />
-    {% endfor %}
     <link rel="stylesheet" href="{{ asset('css/content.css') }}" />
-    <link rel="stylesheet" href="{{ asset('contents/'~content.getKeyName()~'/css/style.css') }}" />
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' />
 {% endblock %}
  
@@ -41,7 +37,8 @@
             <div class="tablet_sensor_2"></div>
             
             <div id="content_area">
-                {{ include('ChristianghMainCghWebsiteBundle:Default:Contents/'~content.getKeyName()~'.html.twig') }}
+            {% block content %}
+            {% endblock %}
             </div>
             
             <div class="tablet_button_border">
@@ -104,9 +101,5 @@
 {% block javascripts %}
 {{ parent() }}
 <script src="{{ asset('js/jquery-highlighter-1.0/jquery.highlighter.min.js') }}" type="text/javascript"></script>
-{% for package in content.getPackagesByType("js") %}
-<script src="{{ asset( package.getUrl() ) }}" type="text/javascript"></script>
-{% endfor %}
 <script src="{{ asset('js/content.js') }}" type="text/javascript"></script>
-<script src="{{ asset('contents/'~content.getKeyName()~'/js/javascript.js') }}" type="text/javascript"></script>
 {% endblock %}

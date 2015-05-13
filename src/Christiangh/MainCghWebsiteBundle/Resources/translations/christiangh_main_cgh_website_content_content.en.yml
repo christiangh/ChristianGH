@@ -1,7 +1,9 @@
 jquery-highlighter: resources-jquery-plugins/jquery-highlighter.html
 
-social_icons_ghris: resources-social-networks/social-network-icons-ghris.html
+social-icons-ghris: resources-social-networks/social-network-icons-ghris.html
 
 music-mixer-table: applications-lmp/my-music-mixer-table.html
 
 irish-stout-beer: applications-preloaders/irish-stout-beer.html
+
+travel-agency: applications-interfaces/travel-agency.html

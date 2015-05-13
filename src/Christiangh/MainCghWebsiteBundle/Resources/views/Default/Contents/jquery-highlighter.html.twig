@@ -1,9 +1,17 @@
+{% extends 'ChristianghMainCghWebsiteBundle:Default:content.html.twig' %}
+
+{% block css %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('contents/jquery-highlighter/css/style.css') }}" />
+{% endblock %}
+
+{% block content %}
 <ul id="tab_menu">
     <li id="title_jquery_highlighter">JQuery Highlighter</li>
-    <li id="tab_demo" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.demo'|trans }}</li>
-    <li id="tab_installation" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.installation'|trans }}</li>
-    <li id="tab_documentation" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.documentation'|trans }}</li>
-    <li id="tab_download" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.download'|trans }}</li>
+    <li id="tab_demo" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.demo'|trans([], 'content_jquery_highlighter') }}</li>
+    <li id="tab_installation" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.installation'|trans([], 'content_jquery_highlighter') }}</li>
+    <li id="tab_documentation" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.documentation'|trans([], 'content_jquery_highlighter') }}</li>
+    <li id="tab_download" class="tab_to_select">{{ 'content_jquery_highlighter.tab_menu.download'|trans([], 'content_jquery_highlighter') }}</li>
 </ul>
 
 <div id="tab_demo_content" class="tab_content">
@@ -30,74 +38,80 @@
 
 <div id="tab_installation_content" class="tab_content">
     <div class="installation_step">
-        <p>{{ 'content_jquery_highlighter.installation.presentation'|trans }}</p>
+        <p>{{ 'content_jquery_highlighter.installation.presentation'|trans([], 'content_jquery_highlighter') }}</p>
     </div>
     <div class="installation_step">
-        <label>1. {{ 'content_jquery_highlighter.installation.include_files.title'|trans }}</label>
-        <p>{{ 'content_jquery_highlighter.installation.include_files.explanation'|trans }}</p>
+        <label>1. {{ 'content_jquery_highlighter.installation.include_files.title'|trans([], 'content_jquery_highlighter') }}</label>
+        <p>{{ 'content_jquery_highlighter.installation.include_files.explanation'|trans([], 'content_jquery_highlighter') }}</p>
     </div>
     <div class="installation_step">
-        <label>2. {{ 'content_jquery_highlighter.installation.link_files.title'|trans }}</label>
-        <p>{{ 'content_jquery_highlighter.installation.link_files.explanation'|trans|raw }}</p>
+        <label>2. {{ 'content_jquery_highlighter.installation.link_files.title'|trans([], 'content_jquery_highlighter') }}</label>
+        <p>{{ 'content_jquery_highlighter.installation.link_files.explanation'|trans([], 'content_jquery_highlighter')|raw }}</p>
         <pre><code>&lt;link rel="stylesheet" href="/jquery-highlighter/css/jquery.highlighter.css" /&gt;</code></pre>
-        <p>{{ 'content_jquery_highlighter.installation.link_files.explanation2'|trans|raw }}</p>
+        <p>{{ 'content_jquery_highlighter.installation.link_files.explanation2'|trans([], 'content_jquery_highlighter')|raw }}</p>
         <pre><code>&lt;script src="/jquery/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;<br />&lt;script src="/jquery-highlighter/jquery.highlighter.min.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
     </div>
     <div class="installation_step">
-        <label>3. {{ 'content_jquery_highlighter.installation.add_code.title'|trans }}</label>
-        <p>{{ 'content_jquery_highlighter.installation.add_code.explanation'|trans }}</p>
+        <label>3. {{ 'content_jquery_highlighter.installation.add_code.title'|trans([], 'content_jquery_highlighter') }}</label>
+        <p>{{ 'content_jquery_highlighter.installation.add_code.explanation'|trans([], 'content_jquery_highlighter') }}</p>
         <pre><code>&lt;script type="text/javascript"&gt;<br />   $(".highlight").highlighter();<br />&lt;/script&gt;</code></pre>
     </div>
 </div>
 
 <div id="tab_documentation_content" class="tab_content">
-    <p>{{ 'content_jquery_highlighter.documentation.presentation'|trans }}<p>
+    <p>{{ 'content_jquery_highlighter.documentation.presentation'|trans([], 'content_jquery_highlighter') }}<p>
     <ul id="attribute_table">
         <li class="row_title">
-            <div>{{ 'content_jquery_highlighter.documentation.table.title.attribute'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.title.default_value'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.title.accepted_values'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.title.description'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.attribute'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.default_value'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.accepted_values'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.title.description'|trans([], 'content_jquery_highlighter') }}</div>
         </li>
         <li>
             <div>queue</div>
             <div>true</div>
             <div>true|false</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.queue.description'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.queue.description'|trans([], 'content_jquery_highlighter') }}</div>
         </li>
         <li>
             <div>pauseTime</div>
             <div>2000</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.pause_time.accepted_values'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.pause_time.description'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.pause_time.accepted_values'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.pause_time.description'|trans([], 'content_jquery_highlighter') }}</div>
         </li>
         <li>
             <div>duration</div>
             <div>3000</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.duration.accepted_values'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.duration.description'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.duration.accepted_values'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.duration.description'|trans([], 'content_jquery_highlighter') }}</div>
         </li>
         <li>
             <div>timing</div>
             <div>'ease-in-out'</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.timing.accepted_values'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.timing.description'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.timing.accepted_values'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.timing.description'|trans([], 'content_jquery_highlighter') }}</div>
         </li>
         <li>
             <div>colorFrom</div>
             <div>'transparent'</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.color_from.accepted_values'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.color_from.description'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_from.accepted_values'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_from.description'|trans([], 'content_jquery_highlighter') }}</div>
         </li>
         <li>
             <div>colorTo</div>
             <div>'#FFFF00'</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.color_to.accepted_values'|trans }}</div>
-            <div>{{ 'content_jquery_highlighter.documentation.table.color_to.description'|trans }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_to.accepted_values'|trans([], 'content_jquery_highlighter') }}</div>
+            <div>{{ 'content_jquery_highlighter.documentation.table.color_to.description'|trans([], 'content_jquery_highlighter') }}</div>
         </li>
     </ul>
 </div>
 
 <div id="tab_download_content" class="tab_content">
-    {{ 'content_jquery_highlighter.download.message'|trans|raw }}
+    {{ 'content_jquery_highlighter.download.message'|trans([], 'content_jquery_highlighter')|raw }}
 </div>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('contents/jquery-highlighter/js/javascript.js') }}" type="text/javascript"></script>
+{% endblock %}

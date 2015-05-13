@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js"{% block angularApp %}{% endblock %}>
     <head>
         <meta charset="UTF-8" />
     {% block metas %}
@@ -22,7 +22,7 @@
     {% endstylesheets %}
     {% endblock %}
     
-    {% block modernizr %}
+    {% block topJavascripts %}
         <script src="{{ asset('js/modernizr/modernizr.js') }}"></script>
     {% endblock %}
     
