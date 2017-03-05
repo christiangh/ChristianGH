@@ -16,6 +16,7 @@
 /build/
 /vendor/
 /bin/
+/.idea/
 /composer.phar
 /web/blog
 /web/js/jquery-ui-1.11.2/*
